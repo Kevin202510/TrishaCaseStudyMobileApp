@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'gen-ed',
+    loadChildren: () => import('./gen-ed/gen-ed.module').then( m => m.GenEdPageModule)
   },
+
 ];
 
 @NgModule({
