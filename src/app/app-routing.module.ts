@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'gen-ed',
     loadChildren: () => import('./gen-ed/gen-ed.module').then( m => m.GenEdPageModule)
   },
+  {
+    path: 'prof-ed',
+    loadChildren: () => import('./prof-ed/prof-ed.module').then( m => m.ProfEdPageModule)
+  },
 
 ];
 

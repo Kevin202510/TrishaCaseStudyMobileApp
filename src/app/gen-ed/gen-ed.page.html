@@ -1,1359 +1,1077 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>General Education</ion-title>
-    <ion-buttons slot="start"><ion-menu-button menu="letexam-menu"></ion-menu-button></ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 <ion-card>
-<ion-card-header>
-<h4>Question # 0 </h4>
-<h4>Rennie Boy believes that everything that happens in this world has a cause or a reason What scientific attitude is seen in his actions?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event,1)">
-<ion-item>
-<ion-label>curiosity</ion-label>
-<ion-radio value="curiosity" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>firm set of beliefs</ion-label>
-<ion-radio value="firm set of beliefs" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>honesty</ion-label>
-<ion-radio value="honesty" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>critical-mindedness</ion-label>
-<ion-radio value="critical-mindedness" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
+  <ion-card-content>
+  <h4>Question #1 </h4>
+  <h4> _____ it never recycled any waste materials, the company’s environmental record was not perfect. </h4>
+    <ion-radio-group (ionChange)="getAns($event,1)">
+    <ion-item>
+    <ion-label>For</ion-label>
+    <ion-radio value="For" [disabled]="answerSelected" ion slot="start"></ion-radio>
+    </ion-item>
+    <ion-item>
+    <ion-label>In that</ion-label>
+    <ion-radio value="In that" [disabled]="answerSelected" ion slot="start"></ion-radio>
+    </ion-item>
+    <ion-item>
+    <ion-label>With</ion-label>
+    <ion-radio value="With" [disabled]="answerSelected" ion slot="start"></ion-radio>
+    </ion-item>
+    <ion-item>
+    <ion-label>Due to </ion-label>
+    <ion-radio value="Due to " [disabled]="answerSelected" ion slot="start"></ion-radio>
+    </ion-item>
+    </ion-radio-group>
+    <br><br>
+  <h4>Question #2 </h4>
+  <h4> Our guest of honor was a loquacious speaker. Loquacious means: </h4>
+  <ion-radio-group (ionChange)="getAns($event,2)">
+  <ion-item>
+  <ion-label>reserved</ion-label>
+  <ion-radio value="reserved" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>verbose</ion-label>
+  <ion-radio value="verbose" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>reticent</ion-label>
+  <ion-radio value="reticent" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>spiritless</ion-label>
+  <ion-radio value="spiritless" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #3 </h4>
+  <h4> The sociological concept of home for most Filipino is the presence of _____. </h4>
+  <ion-radio-group (ionChange)="getAns($event,3)">
+  <ion-item>
+  <ion-label> families with boarders in addition to the family members</ion-label>
+  <ion-radio value=" families with boarders in addition to the family members" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label> nuclear family and extended families</ion-label>
+  <ion-radio value=" nuclear family and extended families" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label> families with illegal light and water connections</ion-label>
+  <ion-radio value=" families with illegal light and water connections" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label> families with pet dogs and cats</ion-label>
+  <ion-radio value=" families with pet dogs and cats" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #4 </h4>
+  <h4> A man is known by the company he keeps. This is an example of a _____ </h4>
+  <ion-radio-group (ionChange)="getAns($event,4)">
+  <ion-item>
+  <ion-label>report</ion-label>
+  <ion-radio value="report" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>rule</ion-label>
+  <ion-radio value="rule" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>poem</ion-label>
+  <ion-radio value="poem" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>proverb</ion-label>
+  <ion-radio value="proverb" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #5 </h4>
+  <h4> Which of the following is the ultimate purpose of Human Right Education? </h4>
+  <ion-radio-group (ionChange)="getAns($event,5)">
+  <ion-item>
+  <ion-label>to identify threats of human rights</ion-label>
+  <ion-radio value="to identify threats of human rights" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>to generate awareness of one’s basic rights</ion-label>
+  <ion-radio value="to generate awareness of one’s basic rights" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>to check on abuses in the exercise of human rights</ion-label>
+  <ion-radio value="to check on abuses in the exercise of human rights" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>to understand and change conditions whic</ion-label>
+  <ion-radio value="to understand and change conditions whic" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #6 </h4>
+  <h4> The members of the federation of cooperatives are _____ </h4>
+  <ion-radio-group (ionChange)="getAns($event,6)">
+  <ion-item>
+  <ion-label>primaries</ion-label>
+  <ion-radio value="primaries" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>secondaries</ion-label>
+  <ion-radio value="secondaries" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>natural persons </ion-label>
+  <ion-radio value="natural persons " [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>primary and secondary cooperatives</ion-label>
+  <ion-radio value="primary and secondary cooperatives" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #7 </h4>
+  <h4> Be sure to fill _____ the forms correctly </h4>
+  <ion-radio-group (ionChange)="getAns($event,7)">
+  <ion-item>
+  <ion-label>over</ion-label>
+  <ion-radio value="over" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>in</ion-label>
+  <ion-radio value="in" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>on</ion-label>
+  <ion-radio value="on" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>with</ion-label>
+  <ion-radio value="with" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #8 </h4>
+  <h4> Vascular tissue that transports water in leave connects directly to which of the following? </h4>
+  <ion-radio-group (ionChange)="getAns($event,8)">
+  <ion-item>
+  <ion-label>meristems in the root tip</ion-label>
+  <ion-radio value="meristems in the root tip" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>pistils in the flower</ion-label>
+  <ion-radio value="pistils in the flower" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>root hairs in the epidermis</ion-label>
+  <ion-radio value="root hairs in the epidermis" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>xylem in the stem</ion-label>
+  <ion-radio value="xylem in the stem" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #9 </h4>
+  <h4> Which statement is true? </h4>
+  <ion-radio-group (ionChange)="getAns($event,9)">
+  <ion-item>
+  <ion-label> 5–√ is a rational number</ion-label>
+  <ion-radio value=" 5–√ is a rational number" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label> 5–√ is a rational number</ion-label>
+  <ion-radio value=" 5–√ is a rational number" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>3–√ is a real number</ion-label>
+  <ion-radio value="3–√ is a real number" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>4–√ is an irrational number</ion-label>
+  <ion-radio value="4–√ is an irrational number" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #10 </h4>
+  <h4> Let us campaign for the total ban ____________ of harmful insecticides. </h4>
+  <ion-radio-group (ionChange)="getAns($event,10)">
+  <ion-item>
+  <ion-label>With the use</ion-label>
+  <ion-radio value="With the use" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>On using</ion-label>
+  <ion-radio value="On using" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>on the use</ion-label>
+  <ion-radio value="on the use" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>with using</ion-label>
+  <ion-radio value="with using" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #11 </h4>
+  <h4> Your statements are IMPERTINENT to the case. The capitalized word means ______________. </h4>
+  <ion-radio-group (ionChange)="getAns($event,11)">
+  <ion-item>
+  <ion-label>Important</ion-label>
+  <ion-radio value="Important" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Irrelevant</ion-label>
+  <ion-radio value="Irrelevant" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Violent</ion-label>
+  <ion-radio value="Violent" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>malicious</ion-label>
+  <ion-radio value="malicious" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #12 </h4>
+  <h4> Imprisoned for 27 years, Nelson Mandela realized his dream of a free and non-racial South Africa by forgiving his oppressors and negotiating in good faith for the peaceful transition to democracy. Nelson Mandel demonstrated his trait of ________________ </h4>
+  <ion-radio-group (ionChange)="getAns($event,12)">
+  <ion-item>
+  <ion-label>Friendliness</ion-label>
+  <ion-radio value="Friendliness" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Determination</ion-label>
+  <ion-radio value="Determination" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>forgiving</ion-label>
+  <ion-radio value="forgiving" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>loyalty</ion-label>
+  <ion-radio value="loyalty" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #13 </h4>
+  <h4> In William Shakespeare’s “Merchant of Venice,” Portia, the judge said: “The quality of mercy is not strained; it droppeth as the gentle rain from heaven upon the place beneath... It is twice blest; it blesseth him that gives and him that takes. ‘Tis mightier than the mightiest... and one is likened to God when mercy seasons justice.” The main thought of the excerpt it that ___________________ </h4>
+  <ion-radio-group (ionChange)="getAns($event,13)">
+  <ion-item>
+  <ion-label>Mercy is only for deserving</ion-label>
+  <ion-radio value="Mercy is only for deserving" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Mercy is limited in extent</ion-label>
+  <ion-radio value="Mercy is limited in extent" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Mercy is limited in extent</ion-label>
+  <ion-radio value="Mercy is limited in extent" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Marcelo H. Del Pilar</ion-label>
+  <ion-radio value="Marcelo H. Del Pilar" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #14 </h4>
+  <h4> Who was the first editor of La Solidaridad ? </h4>
+  <ion-radio-group (ionChange)="getAns($event,14)">
+  <ion-item>
+  <ion-label>Juan Luna</ion-label>
+  <ion-radio value="Juan Luna" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Graciano Lopez Jaena</ion-label>
+  <ion-radio value="Graciano Lopez Jaena" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Jose Rizal</ion-label>
+  <ion-radio value="Jose Rizal" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Marcelo H. Del Pilar</ion-label>
+  <ion-radio value="Marcelo H. Del Pilar" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #15 </h4>
+  <h4> A hypothetical ecosystem contains lettuce (the producer), a caterpillar (the primary consumer), a small passerine bird (the secondary consumer) and a lion (the tertiary consumer). A gardener arrives and sprays pesticide, killing all the caterpillars. What can happen to the ecosystem? </h4>
+  <ion-radio-group (ionChange)="getAns($event,15)">
+  <ion-item>
+  <ion-label>The passerine birds will thrive</ion-label>
+  <ion-radio value="The passerine birds will thrive" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>The lions will eventually die</ion-label>
+  <ion-radio value="The lions will eventually die" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>the passerine birds will convert to herbivores</ion-label>
+  <ion-radio value="the passerine birds will convert to herbivores" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>the lettuce will wilt and die</ion-label>
+  <ion-radio value="the lettuce will wilt and die" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #16 </h4>
+  <h4> Among models of reading strategies, what did student Jk adopt when she reads back and forth attending to both what is in her mind and what’s on the page? </h4>
+  <ion-radio-group (ionChange)="getAns($event,16)">
+  <ion-item>
+  <ion-label>Bottoms-up</ion-label>
+  <ion-radio value="Bottoms-up" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Interactive</ion-label>
+  <ion-radio value="Interactive" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label> Down-top</ion-label>
+  <ion-radio value=" Down-top" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Top-down</ion-label>
+  <ion-radio value="Top-down" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #17 </h4>
+  <h4> If threat of punishment is necessary on erring students, how should this best be done </h4>
+  <ion-radio-group (ionChange)="getAns($event,17)">
+  <ion-item>
+  <ion-label>Make the threat and reinforce with warning</ion-label>
+  <ion-radio value="Make the threat and reinforce with warning" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Make the threat with immediate punishment</ion-label>
+  <ion-radio value="Make the threat with immediate punishment" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Warn and threat at the same time</ion-label>
+  <ion-radio value="Warn and threat at the same time" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>First a warning before the threat</ion-label>
+  <ion-radio value="First a warning before the threat" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #18 </h4>
+  <h4> When USA decided to drop the atomic bomb to Nagasaki in order to stop the land invasion of Japan, what degree of moral certitude can describe this decision of USA? </h4>
+  <ion-radio-group (ionChange)="getAns($event,18)">
+  <ion-item>
+  <ion-label>Doubtful</ion-label>
+  <ion-radio value="Doubtful" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Perflexed</ion-label>
+  <ion-radio value="Perflexed" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Certain</ion-label>
+  <ion-radio value="Certain" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Callous</ion-label>
+  <ion-radio value="Callous" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #19 </h4>
+  <h4> Isang dulog pampatikan na kung saan ang pagpapakahulugan sa isang tekstong binasa ay nakapokus sa sariling panlasa ng mambabasa at kilala rin sa katawagan na readerresponse theory </h4>
+  <ion-radio-group (ionChange)="getAns($event,19)">
+  <ion-item>
+  <ion-label>Impresyonista</ion-label>
+  <ion-radio value="Impresyonista" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Patalambuhay</ion-label>
+  <ion-radio value="Patalambuhay" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>antropolohiya</ion-label>
+  <ion-radio value="antropolohiya" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>pansikolohiya</ion-label>
+  <ion-radio value="pansikolohiya" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #20 </h4>
+  <h4> In one of his poems, the Filipino author Zulueta da Costa said that the Filipinos are like the Molave. What figure of speech was used? </h4>
+  <ion-radio-group (ionChange)="getAns($event,20)">
+  <ion-item>
+  <ion-label>simile</ion-label>
+  <ion-radio value="simile" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>personification</ion-label>
+  <ion-radio value="personification" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>metaphor</ion-label>
+  <ion-radio value="metaphor" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>hyperbole</ion-label>
+  <ion-radio value="hyperbole" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #21 </h4>
+  <h4> In one of his poems, the Filipino author Zulueta da Costa said that the Filipinos are like the Molave. What figure of speech was used? </h4>
+  <ion-radio-group (ionChange)="getAns($event,21)">
+  <ion-item>
+  <ion-label>simile</ion-label>
+  <ion-radio value="simile" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>personification</ion-label>
+  <ion-radio value="personification" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>metaphor</ion-label>
+  <ion-radio value="metaphor" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>hyperbole</ion-label>
+  <ion-radio value="hyperbole" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #22 </h4>
+  <h4> Helen of Troy is the face who launched thousand ships .What figure of speech is used in the given sentence? </h4>
+  <ion-radio-group (ionChange)="getAns($event,22)">
+  <ion-item>
+  <ion-label>ellipsis</ion-label>
+  <ion-radio value="ellipsis" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>synecdoche</ion-label>
+  <ion-radio value="synecdoche" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>alliteration</ion-label>
+  <ion-radio value="alliteration" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>irony</ion-label>
+  <ion-radio value="irony" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #23 </h4>
+  <h4> Si Ana at Ariadne ay masisipag na mag-aaral. Ano ang mali sa pangungusap? </h4>
+  <ion-radio-group (ionChange)="getAns($event,23)">
+  <ion-item>
+  <ion-label>Si</ion-label>
+  <ion-radio value="Si" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>at</ion-label>
+  <ion-radio value="at" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>masisipag</ion-label>
+  <ion-radio value="masisipag" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>aaral</ion-label>
+  <ion-radio value="aaral" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #24 </h4>
+  <h4> ________ mo ng mga damit ang iyong kapatid sa dormitory </h4>
+  <ion-radio-group (ionChange)="getAns($event,24)">
+  <ion-item>
+  <ion-label>Dalhin</ion-label>
+  <ion-radio value="Dalhin" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Dalahin</ion-label>
+  <ion-radio value="Dalahin" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Dalhan</ion-label>
+  <ion-radio value="Dalhan" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Dadalahin</ion-label>
+  <ion-radio value="Dadalahin" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #25 </h4>
+  <h4> ________ sa batas, hindi maaaring isakdal ng dalawang beses ang isang akusado para sa iisang pagkakasala </h4>
+  <ion-radio-group (ionChange)="getAns($event,25)">
+  <ion-item>
+  <ion-label>Maliban</ion-label>
+  <ion-radio value="Maliban" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Ayon</ion-label>
+  <ion-radio value="Ayon" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Ayon kay</ion-label>
+  <ion-radio value="Ayon kay" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Marahil</ion-label>
+  <ion-radio value="Marahil" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #26 </h4>
+  <h4> Army men who are rescued from insurgent kidnap undergo medical check-up. Why is this done? </h4>
+  <ion-radio-group (ionChange)="getAns($event,26)">
+  <ion-item>
+  <ion-label>To protect the prisoner from further harassment</ion-label>
+  <ion-radio value="To protect the prisoner from further harassment" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>To avoid relapses from illness while in hiding</ion-label>
+  <ion-radio value="To avoid relapses from illness while in hiding" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>To determine the physical and mental state of the army man</ion-label>
+  <ion-radio value="To determine the physical and mental state of the army man" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>To determine the loyalty of this army man</ion-label>
+  <ion-radio value="To determine the loyalty of this army man" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #27 </h4>
+  <h4> The reporter was accused in court becaus of his story. The story was ______. </h4>
+  <ion-radio-group (ionChange)="getAns($event,27)">
+  <ion-item>
+  <ion-label>A tainted with malice</ion-label>
+  <ion-radio value="A tainted with malice" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>A narration of facts</ion-label>
+  <ion-radio value="A narration of facts" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>To personal to take </ion-label>
+  <ion-radio value="To personal to take " [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Full of distorted facts</ion-label>
+  <ion-radio value="Full of distorted facts" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #28 </h4>
+  <h4> The menace of drugs has affected the Philippines economy greatly. Which id these drugs are found most destructive to one’s brain? </h4>
+  <ion-radio-group (ionChange)="getAns($event,28)">
+  <ion-item>
+  <ion-label>Opium</ion-label>
+  <ion-radio value="Opium" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Marijuana</ion-label>
+  <ion-radio value="Marijuana" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Methyl salicilate</ion-label>
+  <ion-radio value="Methyl salicilate" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Shabu</ion-label>
+  <ion-radio value="Shabu" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #29 </h4>
+  <h4> Miss Victoria has many children. Her husband decided to send there to Manila and seek jobs. The eldest child is only 16 years old. What right is violated by the father </h4>
+  <ion-radio-group (ionChange)="getAns($event,29)">
+  <ion-item>
+  <ion-label>Right of family to family living wage</ion-label>
+  <ion-radio value="Right of family to family living wage" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Right to education</ion-label>
+  <ion-radio value="Right to education" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Right of the children to work and exploitation</ion-label>
+  <ion-radio value="Right of the children to work and exploitation" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Right of the children to assistance, proper care and</ion-label>
+  <ion-radio value="Right of the children to assistance, proper care and" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #30 </h4>
+  <h4> A prisoner was made to confess of his guilt. A lawyer of the respondent was present in the confession. What was violated? </h4>
+  <ion-radio-group (ionChange)="getAns($event,30)">
+  <ion-item>
+  <ion-label>The confession was without due consultan</ion-label>
+  <ion-radio value="The confession was without due consultan" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>The prisoner was approached properly</ion-label>
+  <ion-radio value="The prisoner was approached properly" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>The prisoner should have a lawyer of his choice</ion-label>
+  <ion-radio value="The prisoner should have a lawyer of his choice" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>The choice of the lawyer was [made by the accuser</ion-label>
+  <ion-radio value="The choice of the lawyer was [made by the accuser" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #31 </h4>
+  <h4> Which of the following statements is definitely true about the nature of science? </h4>
+  <ion-radio-group (ionChange)="getAns($event,31)">
+  <ion-item>
+  <ion-label>Science will help make the world a better place to live in.</ion-label>
+  <ion-radio value="Science will help make the world a better place to live in." [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Science can always uncover the truth in the realm of nature</ion-label>
+  <ion-radio value="Science can always uncover the truth in the realm of nature" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Scientific work requires a dedication that excludes the lives of people in other fields of work</ion-label>
+  <ion-radio value="Scientific work requires a dedication that excludes the lives of people in other fields of work" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Theories in science can be disproved by testing: a well established theory can be demolished with a single observation</ion-label>
+  <ion-radio value="Theories in science can be disproved by testing: a well established theory can be demolished with a single observation" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #32 </h4>
+  <h4> Which of the following processes is best associated with technology than with science? </h4>
+  <ion-radio-group (ionChange)="getAns($event,32)">
+  <ion-item>
+  <ion-label>designing for a need </ion-label>
+  <ion-radio value="designing for a need " [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>uncovering natural phenomena</ion-label>
+  <ion-radio value="uncovering natural phenomena" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>discovering the nature of matter</ion-label>
+  <ion-radio value="discovering the nature of matter" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>constructing concepts, principles and laws</ion-label>
+  <ion-radio value="constructing concepts, principles and laws" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #33 </h4>
+  <h4> Which of the following statements best describes the connection between science and technology? </h4>
+  <ion-radio-group (ionChange)="getAns($event,33)">
+  <ion-item>
+  <ion-label>designing for a need </ion-label>
+  <ion-radio value="designing for a need " [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>uncovering natural phenomena</ion-label>
+  <ion-radio value="uncovering natural phenomena" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label></ion-label>
+  <ion-radio value="" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label></ion-label>
+  <ion-radio value="" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #34 </h4>
+  <h4> Which of the following is a technological concept rather than a scientific concept? </h4>
+  <ion-radio-group (ionChange)="getAns($event,34)">
+  <ion-item>
+  <ion-label>Tungsten has a high melting point</ion-label>
+  <ion-radio value="Tungsten has a high melting point" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Metals are good conductors of heat</ion-label>
+  <ion-radio value="Metals are good conductors of heat" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Resistance is inversely proportional to current.</ion-label>
+  <ion-radio value="Resistance is inversely proportional to current." [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Fluorescent lamps are improved through methods of manufacturing.</ion-label>
+  <ion-radio value="Fluorescent lamps are improved through methods of manufacturing." [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #35 </h4>
+  <h4> You want to add exactly 35.00 g of salt to a solution. What instrument must you use to measure this amount? </h4>
+  <ion-radio-group (ionChange)="getAns($event,35)">
+  <ion-item>
+  <ion-label>beaker</ion-label>
+  <ion-radio value="beaker" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>thermometer </ion-label>
+  <ion-radio value="thermometer " [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>graduated cylinder</ion-label>
+  <ion-radio value="graduated cylinder" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>triple beam balance</ion-label>
+  <ion-radio value="triple beam balance" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #36 </h4>
+  <h4> The teacher-adviser monitors the clas activities of his pupils. </h4>
+  <ion-radio-group (ionChange)="getAns($event,36)">
+  <ion-item>
+  <ion-label>Demands</ion-label>
+  <ion-radio value="Demands" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Observes</ion-label>
+  <ion-radio value="Observes" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Identifies</ion-label>
+  <ion-radio value="Identifies" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>regulates</ion-label>
+  <ion-radio value="regulates" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #37 </h4>
+  <h4> There is a need to renovate the old school building to avoid future accidents </h4>
+  <ion-radio-group (ionChange)="getAns($event,37)">
+  <ion-item>
+  <ion-label>repair</ion-label>
+  <ion-radio value="repair" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>repaint</ion-label>
+  <ion-radio value="repaint" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>restore</ion-label>
+  <ion-radio value="restore" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>redecorate</ion-label>
+  <ion-radio value="redecorate" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #38 </h4>
+  <h4> The athlete was in a sanguine mood after the ball game </h4>
+  <ion-radio-group (ionChange)="getAns($event,38)">
+  <ion-item>
+  <ion-label>Frustrating</ion-label>
+  <ion-radio value="Frustrating" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>happy</ion-label>
+  <ion-radio value="happy" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>sad</ion-label>
+  <ion-radio value="sad" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>discouraging</ion-label>
+  <ion-radio value="discouraging" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #39 </h4>
+  <h4> There is a need for an amicable settlement between the parent and the teacher </h4>
+  <ion-radio-group (ionChange)="getAns($event,39)">
+  <ion-item>
+  <ion-label>embarrassing</ion-label>
+  <ion-radio value="embarrassing" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>humble</ion-label>
+  <ion-radio value="humble" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>peaceful</ion-label>
+  <ion-radio value="peaceful" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>continuing</ion-label>
+  <ion-radio value="continuing" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #40 </h4>
+  <h4> There is an altercation going on between the teacher and principal in the office </h4>
+  <ion-radio-group (ionChange)="getAns($event,40)">
+  <ion-item>
+  <ion-label>dispute</ion-label>
+  <ion-radio value="dispute" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>disput</ion-label>
+  <ion-radio value="disput" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>settlement</ion-label>
+  <ion-radio value="settlement" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>jealousy</ion-label>
+  <ion-radio value="jealousy" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #41 </h4>
+  <h4> The English teacher is proficient in her teaching </h4>
+  <ion-radio-group (ionChange)="getAns($event,41)">
+  <ion-item>
+  <ion-label>effective</ion-label>
+  <ion-radio value="effective" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>expert</ion-label>
+  <ion-radio value="expert" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>engrossed</ion-label>
+  <ion-radio value="engrossed" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>perfect</ion-label>
+  <ion-radio value="perfect" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #42 </h4>
+  <h4> Stipulate in your constitution and by-laws the qualified of the officers. </h4>
+  <ion-radio-group (ionChange)="getAns($event,42)">
+  <ion-item>
+  <ion-label>specify</ion-label>
+  <ion-radio value="specify" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>attach</ion-label>
+  <ion-radio value="attach" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>fasten</ion-label>
+  <ion-radio value="fasten" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>underline</ion-label>
+  <ion-radio value="underline" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #43 </h4>
+  <h4> Integrate values in all your subject areas </h4>
+  <ion-radio-group (ionChange)="getAns($event,43)">
+  <ion-item>
+  <ion-label>remove</ion-label>
+  <ion-radio value="remove" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>include</ion-label>
+  <ion-radio value="include" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>decrease</ion-label>
+  <ion-radio value="decrease" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>criticize</ion-label>
+  <ion-radio value="criticize" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #44 </h4>
+  <h4> His preposterous reason made him the talk of the campus </h4>
+  <ion-radio-group (ionChange)="getAns($event,44)">
+  <ion-item>
+  <ion-label>magnificent</ion-label>
+  <ion-radio value="magnificent" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>ridiculous</ion-label>
+  <ion-radio value="ridiculous" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>funny</ion-label>
+  <ion-radio value="funny" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>positive</ion-label>
+  <ion-radio value="positive" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #45 </h4>
+  <h4> The singer was fidgety as the judges were deciding on the winner </h4>
+  <ion-radio-group (ionChange)="getAns($event,45)">
+  <ion-item>
+  <ion-label>appealing</ion-label>
+  <ion-radio value="appealing" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>with love</ion-label>
+  <ion-radio value="with love" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>restlessly</ion-label>
+  <ion-radio value="restlessly" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>none of these</ion-label>
+  <ion-radio value="none of these" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #46 </h4>
+  <h4> A priest gave all his possessions to disabled children. What right may they claim? </h4>
+  <ion-radio-group (ionChange)="getAns($event,46)">
+  <ion-item>
+  <ion-label>Right to just treatment</ion-label>
+  <ion-radio value="Right to just treatment" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Right to proper treatment</ion-label>
+  <ion-radio value="Right to proper treatment" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Right of disable to equal treatment</ion-label>
+  <ion-radio value="Right of disable to equal treatment" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Right to disabled to equal protection</ion-label>
+  <ion-radio value="Right to disabled to equal protection" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #47 </h4>
+  <h4> The parent remarked,” ____________ I come late, just lock the door </h4>
+  <ion-radio-group (ionChange)="getAns($event,47)">
+  <ion-item>
+  <ion-label>In the event</ion-label>
+  <ion-radio value="In the event" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>In the interval </ion-label>
+  <ion-radio value="In the interval " [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>In the process</ion-label>
+  <ion-radio value="In the process" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>In the</ion-label>
+  <ion-radio value="In the" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #48 </h4>
+  <h4> The copyreader found the news story boring. He found it full of __________. </h4>
+  <ion-radio-group (ionChange)="getAns($event,48)">
+  <ion-item>
+  <ion-label>Adjectives</ion-label>
+  <ion-radio value="Adjectives" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Verbs</ion-label>
+  <ion-radio value="Verbs" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>In the process</ion-label>
+  <ion-radio value="In the process" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>In the</ion-label>
+  <ion-radio value="In the" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #49 </h4>
+  <h4> The copyreader found the news story boring. He found it full of __________. </h4>
+  <ion-radio-group (ionChange)="getAns($event,49)">
+  <ion-item>
+  <ion-label>Adjectives</ion-label>
+  <ion-radio value="Adjectives" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Verbs</ion-label>
+  <ion-radio value="Verbs" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Pronouns</ion-label>
+  <ion-radio value="Pronouns" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Adverbs</ion-label>
+  <ion-radio value="Adverbs" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  <br><br>
+  <h4>Question #50 </h4>
+  <h4> Let us campaign for the total ban ____________ of harmful insecticides. </h4>
+  <ion-radio-group (ionChange)="getAns($event,50)">
+  <ion-item>
+  <ion-label>With the use</ion-label>
+  <ion-radio value="With the use" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>On using</ion-label>
+  <ion-radio value="On using" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>on the use</ion-label>
+  <ion-radio value="on the use" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>with using</ion-label>
+  <ion-radio value="with using" [disabled]="answerSelected" ion slot="start"></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  </ion-card-content>
 </ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 1 </h4>
-<h4>_____ it never recycled any waste materials, the company’s environmental record was not perfect.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event,2)">
-<ion-item>
-<ion-label>For</ion-label>
-<ion-radio value="For" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>In that</ion-label>
-<ion-radio value="In that" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>With</ion-label>
-<ion-radio value="With" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Due to </ion-label>
-<ion-radio value="Due to " ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 2 </h4>
-<h4>Our guest of honor was a loquacious speaker. Loquacious means:</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event,3)">
-<ion-item>
-<ion-label>reserved</ion-label>
-<ion-radio value="reserved" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>verbose</ion-label>
-<ion-radio value="verbose" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>reticent</ion-label>
-<ion-radio value="reticent" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>spiritless</ion-label>
-<ion-radio value="spiritless" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 3 </h4>
-<h4>The sociological concept of home for most Filipino is the presence of _____.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event,4)">
-<ion-item>
-<ion-label> families with boarders in addition to the family members</ion-label>
-<ion-radio value=" families with boarders in addition to the family members" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label> nuclear family and extended families</ion-label>
-<ion-radio value=" nuclear family and extended families" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label> families with illegal light and water connections</ion-label>
-<ion-radio value=" families with illegal light and water connections" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label> families with pet dogs and cats</ion-label>
-<ion-radio value=" families with pet dogs and cats" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 4 </h4>
-<h4>A man is known by the company he keeps. This is an example of a _____</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event,5)">
-<ion-item>
-<ion-label>report</ion-label>
-<ion-radio value="report" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>rule</ion-label>
-<ion-radio value="rule" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>poem</ion-label>
-<ion-radio value="poem" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>proverb</ion-label>
-<ion-radio value="proverb" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 5 </h4>
-<h4>Which of the following is the ultimate purpose of Human Right Education?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>to identify threats of human rights</ion-label>
-<ion-radio value="to identify threats of human rights" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>to generate awareness of one’s basic rights</ion-label>
-<ion-radio value="to generate awareness of one’s basic rights" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>to check on abuses in the exercise of human rights</ion-label>
-<ion-radio value="to check on abuses in the exercise of human rights" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>to understand and change conditions whic</ion-label>
-<ion-radio value="to understand and change conditions whic" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 6 </h4>
-<h4>The members of the federation of cooperatives are _____</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>primaries</ion-label>
-<ion-radio value="primaries" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>secondaries</ion-label>
-<ion-radio value="secondaries" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>natural persons </ion-label>
-<ion-radio value="natural persons " ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>primary and secondary cooperatives</ion-label>
-<ion-radio value="primary and secondary cooperatives" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 7 </h4>
-<h4>Be sure to fill _____ the forms correctly</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>over</ion-label>
-<ion-radio value="over" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>in</ion-label>
-<ion-radio value="in" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>on</ion-label>
-<ion-radio value="on" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>with</ion-label>
-<ion-radio value="with" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 8 </h4>
-<h4>Vascular tissue that transports water in leave connects directly to which of the following?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>meristems in the root tip</ion-label>
-<ion-radio value="meristems in the root tip" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>pistils in the flower</ion-label>
-<ion-radio value="pistils in the flower" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>root hairs in the epidermis</ion-label>
-<ion-radio value="root hairs in the epidermis" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>xylem in the stem</ion-label>
-<ion-radio value="xylem in the stem" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 9 </h4>
-<h4>Which statement is true?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label> 5–√ is a rational number</ion-label>
-<ion-radio value=" 5–√ is a rational number" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label> 5–√ is a rational number</ion-label>
-<ion-radio value=" 5–√ is a rational number" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>3–√ is a real number</ion-label>
-<ion-radio value="3–√ is a real number" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>4–√ is an irrational number</ion-label>
-<ion-radio value="4–√ is an irrational number" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 10 </h4>
-<h4>Let us campaign for the total ban ____________ of harmful insecticides.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>With the use</ion-label>
-<ion-radio value="With the use" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>On using</ion-label>
-<ion-radio value="On using" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>on the use</ion-label>
-<ion-radio value="on the use" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>with using</ion-label>
-<ion-radio value="with using" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 11 </h4>
-<h4>Your statements are IMPERTINENT to the case. The capitalized word means ______________.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Important</ion-label>
-<ion-radio value="Important" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Irrelevant</ion-label>
-<ion-radio value="Irrelevant" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Violent</ion-label>
-<ion-radio value="Violent" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>malicious</ion-label>
-<ion-radio value="malicious" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 12 </h4>
-<h4>Imprisoned for 27 years, Nelson Mandela realized his dream of a free and non-racial South Africa by forgiving his oppressors and negotiating in good faith for the peaceful transition to democracy. Nelson Mandel demonstrated his trait of ________________</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Friendliness</ion-label>
-<ion-radio value="Friendliness" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Determination</ion-label>
-<ion-radio value="Determination" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>forgiving</ion-label>
-<ion-radio value="forgiving" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>loyalty</ion-label>
-<ion-radio value="loyalty" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 13 </h4>
-<h4>In William Shakespeare’s “Merchant of Venice,” Portia, the judge said: “The quality of mercy is not strained; it droppeth as the gentle rain from heaven upon the place beneath... It is twice blest; it blesseth him that gives and him that takes. ‘Tis mightier than the mightiest... and one is likened to God when mercy seasons justice.” The main thought of the excerpt it that ___________________ </h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Mercy is only for deserving</ion-label>
-<ion-radio value="Mercy is only for deserving" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Mercy is limited in extent</ion-label>
-<ion-radio value="Mercy is limited in extent" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Mercy is limited in extent</ion-label>
-<ion-radio value="Mercy is limited in extent" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Marcelo H. Del Pilar</ion-label>
-<ion-radio value="Marcelo H. Del Pilar" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 14 </h4>
-<h4>Who was the first editor of La Solidaridad ?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Juan Luna</ion-label>
-<ion-radio value="Juan Luna" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Graciano Lopez Jaena</ion-label>
-<ion-radio value="Graciano Lopez Jaena" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Jose Rizal</ion-label>
-<ion-radio value="Jose Rizal" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Marcelo H. Del Pilar</ion-label>
-<ion-radio value="Marcelo H. Del Pilar" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 15 </h4>
-<h4>A hypothetical ecosystem contains lettuce (the producer), a caterpillar (the primary consumer), a small passerine bird (the secondary consumer) and a lion (the tertiary consumer). A gardener arrives and sprays pesticide, killing all the caterpillars. What can happen to the ecosystem?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>The passerine birds will thrive</ion-label>
-<ion-radio value="The passerine birds will thrive" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>The lions will eventually die</ion-label>
-<ion-radio value="The lions will eventually die" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>the passerine birds will convert to herbivores</ion-label>
-<ion-radio value="the passerine birds will convert to herbivores" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>the lettuce will wilt and die</ion-label>
-<ion-radio value="the lettuce will wilt and die" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 16 </h4>
-<h4>Among models of reading strategies, what did student Jk adopt when she reads back and forth attending to both what is in her mind and what’s on the page?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Bottoms-up</ion-label>
-<ion-radio value="Bottoms-up" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Interactive</ion-label>
-<ion-radio value="Interactive" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label> Down-top</ion-label>
-<ion-radio value=" Down-top" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Top-down</ion-label>
-<ion-radio value="Top-down" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 17 </h4>
-<h4>If threat of punishment is necessary on erring students, how should this best be done</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Make the threat and reinforce with warning</ion-label>
-<ion-radio value="Make the threat and reinforce with warning" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Make the threat with immediate punishment</ion-label>
-<ion-radio value="Make the threat with immediate punishment" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Warn and threat at the same time</ion-label>
-<ion-radio value="Warn and threat at the same time" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>First a warning before the threat</ion-label>
-<ion-radio value="First a warning before the threat" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 18 </h4>
-<h4>When USA decided to drop the atomic bomb to Nagasaki in order to stop the land invasion of Japan, what degree of moral certitude can describe this decision of USA?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Doubtful</ion-label>
-<ion-radio value="Doubtful" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Perflexed</ion-label>
-<ion-radio value="Perflexed" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Certain</ion-label>
-<ion-radio value="Certain" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Callous</ion-label>
-<ion-radio value="Callous" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 19 </h4>
-<h4>Isang dulog pampatikan na kung saan ang pagpapakahulugan sa isang tekstong binasa ay nakapokus sa sariling panlasa ng mambabasa at kilala rin sa katawagan na readerresponse theory</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Impresyonista</ion-label>
-<ion-radio value="Impresyonista" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Patalambuhay</ion-label>
-<ion-radio value="Patalambuhay" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>antropolohiya</ion-label>
-<ion-radio value="antropolohiya" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>pansikolohiya</ion-label>
-<ion-radio value="pansikolohiya" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 20 </h4>
-<h4>In one of his poems, the Filipino author Zulueta da Costa said that the Filipinos are like the Molave. What figure of speech was used?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>simile</ion-label>
-<ion-radio value="simile" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>personification</ion-label>
-<ion-radio value="personification" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>metaphor</ion-label>
-<ion-radio value="metaphor" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>hyperbole</ion-label>
-<ion-radio value="hyperbole" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 21 </h4>
-<h4>In one of his poems, the Filipino author Zulueta da Costa said that the Filipinos are like the Molave. What figure of speech was used?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>simile</ion-label>
-<ion-radio value="simile" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>personification</ion-label>
-<ion-radio value="personification" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>metaphor</ion-label>
-<ion-radio value="metaphor" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>hyperbole</ion-label>
-<ion-radio value="hyperbole" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 22 </h4>
-<h4>Helen of Troy is the face who launched thousand ships .What figure of speech is used in the given sentence?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>ellipsis</ion-label>
-<ion-radio value="ellipsis" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>synecdoche</ion-label>
-<ion-radio value="synecdoche" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>alliteration</ion-label>
-<ion-radio value="alliteration" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>irony</ion-label>
-<ion-radio value="irony" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 23 </h4>
-<h4>Si Ana at Ariadne ay masisipag na mag-aaral. Ano ang mali sa pangungusap?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Si</ion-label>
-<ion-radio value="Si" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>at</ion-label>
-<ion-radio value="at" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>masisipag</ion-label>
-<ion-radio value="masisipag" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>aaral</ion-label>
-<ion-radio value="aaral" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 24 </h4>
-<h4>________ mo ng mga damit ang iyong kapatid sa dormitory</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Dalhin</ion-label>
-<ion-radio value="Dalhin" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Dalahin</ion-label>
-<ion-radio value="Dalahin" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Dalhan</ion-label>
-<ion-radio value="Dalhan" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Dadalahin</ion-label>
-<ion-radio value="Dadalahin" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 25 </h4>
-<h4>________ sa batas, hindi maaaring isakdal ng dalawang beses ang isang akusado para sa iisang pagkakasala</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Maliban</ion-label>
-<ion-radio value="Maliban" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Ayon</ion-label>
-<ion-radio value="Ayon" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Ayon kay</ion-label>
-<ion-radio value="Ayon kay" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Marahil</ion-label>
-<ion-radio value="Marahil" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 26 </h4>
-<h4>Army men who are rescued from insurgent kidnap undergo medical check-up. Why is this done?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>To protect the prisoner from further harassment</ion-label>
-<ion-radio value="To protect the prisoner from further harassment" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>To avoid relapses from illness while in hiding</ion-label>
-<ion-radio value="To avoid relapses from illness while in hiding" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>To determine the physical and mental state of the army man</ion-label>
-<ion-radio value="To determine the physical and mental state of the army man" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>To determine the loyalty of this army man</ion-label>
-<ion-radio value="To determine the loyalty of this army man" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 27 </h4>
-<h4>The reporter was accused in court becaus of his story. The story was ______.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>A tainted with malice</ion-label>
-<ion-radio value="A tainted with malice" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>A narration of facts</ion-label>
-<ion-radio value="A narration of facts" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>To personal to take </ion-label>
-<ion-radio value="To personal to take " ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Full of distorted facts</ion-label>
-<ion-radio value="Full of distorted facts" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 28 </h4>
-<h4>The menace of drugs has affected the Philippines economy greatly. Which id these drugs are found most destructive to one’s brain?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Opium</ion-label>
-<ion-radio value="Opium" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Marijuana</ion-label>
-<ion-radio value="Marijuana" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Methyl salicilate</ion-label>
-<ion-radio value="Methyl salicilate" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Shabu</ion-label>
-<ion-radio value="Shabu" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 29 </h4>
-<h4>Miss Victoria has many children. Her husband decided to send there to Manila and seek jobs. The eldest child is only 16 years old. What right is violated by the father</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Right of family to family living wage</ion-label>
-<ion-radio value="Right of family to family living wage" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Right to education</ion-label>
-<ion-radio value="Right to education" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Right of the children to work and exploitation</ion-label>
-<ion-radio value="Right of the children to work and exploitation" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Right of the children to assistance, proper care and</ion-label>
-<ion-radio value="Right of the children to assistance, proper care and" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 30 </h4>
-<h4>A prisoner was made to confess of his guilt. A lawyer of the respondent was present in the confession. What was violated?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>The confession was without due consultan</ion-label>
-<ion-radio value="The confession was without due consultan" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>The prisoner was approached properly</ion-label>
-<ion-radio value="The prisoner was approached properly" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>The prisoner should have a lawyer of his choice</ion-label>
-<ion-radio value="The prisoner should have a lawyer of his choice" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>The choice of the lawyer was [made by the accuser</ion-label>
-<ion-radio value="The choice of the lawyer was [made by the accuser" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 31 </h4>
-<h4>Which of the following statements is definitely true about the nature of science?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Science will help make the world a better place to live in.</ion-label>
-<ion-radio value="Science will help make the world a better place to live in." ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Science can always uncover the truth in the realm of nature</ion-label>
-<ion-radio value="Science can always uncover the truth in the realm of nature" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Scientific work requires a dedication that excludes the lives of people in other fields of work</ion-label>
-<ion-radio value="Scientific work requires a dedication that excludes the lives of people in other fields of work" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Theories in science can be disproved by testing: a well established theory can be demolished with a single observation</ion-label>
-<ion-radio value="Theories in science can be disproved by testing: a well established theory can be demolished with a single observation" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 32 </h4>
-<h4>Which of the following processes is best associated with technology than with science?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>designing for a need </ion-label>
-<ion-radio value="designing for a need " ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>uncovering natural phenomena</ion-label>
-<ion-radio value="uncovering natural phenomena" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>discovering the nature of matter</ion-label>
-<ion-radio value="discovering the nature of matter" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>constructing concepts, principles and laws</ion-label>
-<ion-radio value="constructing concepts, principles and laws" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 33 </h4>
-<h4>Which of the following statements best describes the connection between science and technology?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>designing for a need </ion-label>
-<ion-radio value="designing for a need " ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>uncovering natural phenomena</ion-label>
-<ion-radio value="uncovering natural phenomena" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label></ion-label>
-<ion-radio value="" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label></ion-label>
-<ion-radio value="" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 34 </h4>
-<h4>Which of the following is a technological concept rather than a scientific concept?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Tungsten has a high melting point</ion-label>
-<ion-radio value="Tungsten has a high melting point" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Metals are good conductors of heat</ion-label>
-<ion-radio value="Metals are good conductors of heat" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Resistance is inversely proportional to current.</ion-label>
-<ion-radio value="Resistance is inversely proportional to current." ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Fluorescent lamps are improved through methods of manufacturing.</ion-label>
-<ion-radio value="Fluorescent lamps are improved through methods of manufacturing." ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 35 </h4>
-<h4>You want to add exactly 35.00 g of salt to a solution. What instrument must you use to measure this amount?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>beaker</ion-label>
-<ion-radio value="beaker" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>thermometer </ion-label>
-<ion-radio value="thermometer " ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>graduated cylinder</ion-label>
-<ion-radio value="graduated cylinder" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>triple beam balance</ion-label>
-<ion-radio value="triple beam balance" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 36 </h4>
-<h4>The teacher-adviser monitors the clas activities of his pupils.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Demands</ion-label>
-<ion-radio value="Demands" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Observes</ion-label>
-<ion-radio value="Observes" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Identifies</ion-label>
-<ion-radio value="Identifies" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>regulates</ion-label>
-<ion-radio value="regulates" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 37 </h4>
-<h4>There is a need to renovate the old school building to avoid future accidents</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>repair</ion-label>
-<ion-radio value="repair" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>repaint</ion-label>
-<ion-radio value="repaint" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>restore</ion-label>
-<ion-radio value="restore" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>redecorate</ion-label>
-<ion-radio value="redecorate" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 38 </h4>
-<h4>The athlete was in a sanguine mood after the ball game</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Frustrating</ion-label>
-<ion-radio value="Frustrating" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>happy</ion-label>
-<ion-radio value="happy" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>sad</ion-label>
-<ion-radio value="sad" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>discouraging</ion-label>
-<ion-radio value="discouraging" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 39 </h4>
-<h4>There is a need for an amicable settlement between the parent and the teacher</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>embarrassing</ion-label>
-<ion-radio value="embarrassing" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>humble</ion-label>
-<ion-radio value="humble" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>peaceful</ion-label>
-<ion-radio value="peaceful" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>continuing</ion-label>
-<ion-radio value="continuing" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 40 </h4>
-<h4>There is an altercation going on between the teacher and principal in the office</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>dispute</ion-label>
-<ion-radio value="dispute" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>disput</ion-label>
-<ion-radio value="disput" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>settlement</ion-label>
-<ion-radio value="settlement" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>jealousy</ion-label>
-<ion-radio value="jealousy" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 41 </h4>
-<h4>The English teacher is proficient in her teaching</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>effective</ion-label>
-<ion-radio value="effective" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>expert</ion-label>
-<ion-radio value="expert" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>engrossed</ion-label>
-<ion-radio value="engrossed" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>perfect</ion-label>
-<ion-radio value="perfect" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 42 </h4>
-<h4>Stipulate in your constitution and by-laws the qualified of the officers.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>specify</ion-label>
-<ion-radio value="specify" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>attach</ion-label>
-<ion-radio value="attach" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>fasten</ion-label>
-<ion-radio value="fasten" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>underline</ion-label>
-<ion-radio value="underline" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 43 </h4>
-<h4>Integrate values in all your subject areas</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>remove</ion-label>
-<ion-radio value="remove" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>include</ion-label>
-<ion-radio value="include" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>decrease</ion-label>
-<ion-radio value="decrease" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>criticize</ion-label>
-<ion-radio value="criticize" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 44 </h4>
-<h4>His preposterous reason made him the talk of the campus</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>magnificent</ion-label>
-<ion-radio value="magnificent" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>ridiculous</ion-label>
-<ion-radio value="ridiculous" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>funny</ion-label>
-<ion-radio value="funny" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>positive</ion-label>
-<ion-radio value="positive" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 45 </h4>
-<h4>The singer was fidgety as the judges were deciding on the winner</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>appealing</ion-label>
-<ion-radio value="appealing" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>with love</ion-label>
-<ion-radio value="with love" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>restlessly</ion-label>
-<ion-radio value="restlessly" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>none of these</ion-label>
-<ion-radio value="none of these" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 46 </h4>
-<h4>A priest gave all his possessions to disabled children. What right may they claim?</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Right to just treatment</ion-label>
-<ion-radio value="Right to just treatment" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Right to proper treatment</ion-label>
-<ion-radio value="Right to proper treatment" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Right of disable to equal treatment</ion-label>
-<ion-radio value="Right of disable to equal treatment" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Right to disabled to equal protection</ion-label>
-<ion-radio value="Right to disabled to equal protection" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 47 </h4>
-<h4>The parent remarked,” ____________ I come late, just lock the door</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>In the event</ion-label>
-<ion-radio value="In the event" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>In the interval </ion-label>
-<ion-radio value="In the interval " ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>In the process</ion-label>
-<ion-radio value="In the process" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>In the</ion-label>
-<ion-radio value="In the" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 48 </h4>
-<h4>The copyreader found the news story boring. He found it full of __________.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Adjectives</ion-label>
-<ion-radio value="Adjectives" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Verbs</ion-label>
-<ion-radio value="Verbs" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>In the process</ion-label>
-<ion-radio value="In the process" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>In the</ion-label>
-<ion-radio value="In the" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
-<ion-card>
-<ion-card-header>
-<h4>Question # 49 </h4>
-<h4>The copyreader found the news story boring. He found it full of __________.</h4>
-</ion-card-header>
-<ion-card-content>
-<ion-radio-group (ionChange)="getAns($event)">
-<ion-item>
-<ion-label>Adjectives</ion-label>
-<ion-radio value="Adjectives" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Verbs</ion-label>
-<ion-radio value="Verbs" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Pronouns</ion-label>
-<ion-radio value="Pronouns" ion slot="start"></ion-radio>
-</ion-item>
-<ion-item>
-<ion-label>Adverbs</ion-label>
-<ion-radio value="Adverbs" ion slot="start"></ion-radio>
-</ion-item>
-</ion-radio-group>
-</ion-card-content>
-</ion-card>
-<br><br>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button routerLink="/gen-ed">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>General Education</ion-label>
+      <ion-badge>6</ion-badge>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="/prof-ed">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Professional Education</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
 </ion-content>

@@ -1,0 +1,1074 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="margin-top: 10px;"><center>PROFESSIONAL EDUCATION</center></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button routerLink="/gen-ed">
+          <ion-label>General Education</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button routerLink="/prof-ed">
+          <ion-label>Professional Education</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+  <ion-card>
+    <ion-card-content>
+        <h4>Question #1 </h4>
+      <h4> It is the study of man’s prehistory through the buried remains of ancient culture, skeletal remnants of human beings. </h4>
+      <ion-radio-group (ionChange)="getAns($event,1)">
+      <ion-item>
+      <ion-label>Anthropology</ion-label>
+      <ion-radio value="Anthropology" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Archeology</ion-label>
+      <ion-radio value="Archeology" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Ethnology</ion-label>
+      <ion-radio value="Ethnology" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Ethnography</ion-label>
+      <ion-radio value="Ethnography" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #2 </h4>
+      <h4> Teacher D claims: If I have to give reinforcement, it has to be given immediately after the response. Which theory supports Teacher D? </h4>
+      <ion-radio-group (ionChange)="getAns($event,2)">
+      <ion-item>
+      <ion-label>operant conditioning theory</ion-label>
+      <ion-radio value="operant conditioning theory" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>social cognitive theory</ion-label>
+      <ion-radio value="social cognitive theory" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>cognitive theory</ion-label>
+      <ion-radio value="cognitive theory" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>humanist theory</ion-label>
+      <ion-radio value="humanist theory" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #3 </h4>
+      <h4> Visual imagery helps people store information in their memory more effectively. Which is one teaching implication of this principle? </h4>
+      <ion-radio-group (ionChange)="getAns($event,3)">
+      <ion-item>
+      <ion-label>You will not object when your students daydream in class.</ion-label>
+      <ion-radio value="You will not object when your students daydream in class." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Instruct students to take notes while you lecture.</ion-label>
+      <ion-radio value="Instruct students to take notes while you lecture." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Encourage your students to imagine the characters and situations when reading a story.</ion-label>
+      <ion-radio value="Encourage your students to imagine the characters and situations when reading a story." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Tell them to read more illustrated comics.</ion-label>
+      <ion-radio value="Tell them to read more illustrated comics." ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #4 </h4>
+      <h4> Which is essential in the cognitive development of a person according to Vygotsky? </h4>
+      <ion-radio-group (ionChange)="getAns($event,4)">
+      <ion-item>
+      <ion-label>independent thinking</ion-label>
+      <ion-radio value="independent thinking" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>social interaction</ion-label>
+      <ion-radio value="social interaction" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>individual mental work</ion-label>
+      <ion-radio value="individual mental work" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>scientific thinking</ion-label>
+      <ion-radio value="scientific thinking" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #5 </h4>
+      <h4> The design of the 2002 Basic Education Curriculum (BEC) is based on the principles that the main sources for contemporary basic education are the expert systems of knowledge and the learner's experience in their context.This shows that the BEC is _____ in orientation. I. constructivist II. behaviorist III. essentialist </h4>
+      <ion-radio-group (ionChange)="getAns($event,5)">
+      <ion-item>
+      <ion-label>I and III</ion-label>
+      <ion-radio value="I and III" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>III only</ion-label>
+      <ion-radio value="III only" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>I only</ion-label>
+      <ion-radio value="I only" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>I, II, and III</ion-label>
+      <ion-radio value="I, II, and III" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #6 </h4>
+      <h4> Which assessment tool shows evidence of student’s writing skills? </h4>
+      <ion-radio-group (ionChange)="getAns($event,6)">
+      <ion-item>
+      <ion-label>project </ion-label>
+      <ion-radio value="project " ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>portfolio</ion-label>
+      <ion-radio value="portfolio" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>critiquing sessions</ion-label>
+      <ion-radio value="critiquing sessions" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>daily journal</ion-label>
+      <ion-radio value="daily journal" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #7 </h4>
+      <h4> Ask to do a learning task, Joe hesitates and says Mahirap. Ayaw ko. 'Di ko kaya! (It's difficult. I don't like it. I can't do it.) To which problem does the case of the student allude? I. Unmotivated students II. Uncaring teachers III. Extremely difficult learning tasks IV. incompetent teachers </h4>
+      <ion-radio-group (ionChange)="getAns($event,7)">
+      <ion-item>
+      <ion-label>I and III</ion-label>
+      <ion-radio value="I and III" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>I and II</ion-label>
+      <ion-radio value="I and II" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>II and III</ion-label>
+      <ion-radio value="II and III" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>I, II, and III</ion-label>
+      <ion-radio value="I, II, and III" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #8 </h4>
+      <h4> Teacher S wants to determine immediately the learning difficulties of her students. Which of the following do you expect her to undertake? </h4>
+      <ion-radio-group (ionChange)="getAns($event,8)">
+      <ion-item>
+      <ion-label>Require her students to prepare a portfolio.</ion-label>
+      <ion-radio value="Require her students to prepare a portfolio." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Administer an achievement test.</ion-label>
+      <ion-radio value="Administer an achievement test." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Administer a diagnostic test.</ion-label>
+      <ion-radio value="Administer a diagnostic test." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Interview her students directly.</ion-label>
+      <ion-radio value="Interview her students directly." ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #9 </h4>
+      <h4> NSAT and NEAT results are interpreted against set mastery level. This means that NSAT and NEAT fall under __________. </h4>
+      <ion-radio-group (ionChange)="getAns($event,9)">
+      <ion-item>
+      <ion-label>intelligence test</ion-label>
+      <ion-radio value="intelligence test" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>aptitude test</ion-label>
+      <ion-radio value="aptitude test" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>criterion-referenced test</ion-label>
+      <ion-radio value="criterion-referenced test" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>norm-referenced test</ion-label>
+      <ion-radio value="norm-referenced test" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #10 </h4>
+      <h4> The result of the item analysis showed that item no. 4 has a discrimination index of 0.67. What characteristic could be true about this item? </h4>
+      <ion-radio-group (ionChange)="getAns($event,10)">
+      <ion-item>
+      <ion-label>Difficult</ion-label>
+      <ion-radio value="Difficult" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Valid</ion-label>
+      <ion-radio value="Valid" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Easy</ion-label>
+      <ion-radio value="Easy" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Average</ion-label>
+      <ion-radio value="Average" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #11 </h4>
+      <h4> The theme of Vygotsky's socio-cultural theory emphasizes the role of appropriate assistance given by the teacher to accomplish a task. Such help enables the child to move from the zone of actual developmeny to a zone of proximal development. Such assistance is termed _____. </h4>
+      <ion-radio-group (ionChange)="getAns($event,11)">
+      <ion-item>
+      <ion-label>competency technique</ion-label>
+      <ion-radio value="competency technique" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>scaffolding</ion-label>
+      <ion-radio value="scaffolding" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>active participation</ion-label>
+      <ion-radio value="active participation" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>collaboration</ion-label>
+      <ion-radio value="collaboration" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #12 </h4>
+      <h4> Which of these activities is not appealing to the bodily-kinesthetic learners? </h4>
+      <ion-radio-group (ionChange)="getAns($event,12)">
+      <ion-item>
+      <ion-label>making math moves</ion-label>
+      <ion-radio value="making math moves" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>doing simple calisthenics</ion-label>
+      <ion-radio value="doing simple calisthenics" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>sketching/illustrating events</ion-label>
+      <ion-radio value="sketching/illustrating events" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>joining extramural events</ion-label>
+      <ion-radio value="joining extramural events" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #13 </h4>
+      <h4> Institutions of learning are required to meet the minimum standards for state recognition but are encouraged to set higher standards of quality over and above the minimum through _____ as provided in Educational Act of 1982. </h4>
+      <ion-radio-group (ionChange)="getAns($event,13)">
+      <ion-item>
+      <ion-label>lifelong education</ion-label>
+      <ion-radio value="lifelong education" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>voluntary accreditation</ion-label>
+      <ion-radio value="voluntary accreditation" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>formal education</ion-label>
+      <ion-radio value="formal education" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>academic freedom</ion-label>
+      <ion-radio value="academic freedom" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #14 </h4>
+      <h4> You intend to assess affective attributes such as capacity to feel, attitudes, and behavior. Which of the following should you establish to ascertain the instrument's validity? </h4>
+      <ion-radio-group (ionChange)="getAns($event,14)">
+      <ion-item>
+      <ion-label>construct</ion-label>
+      <ion-radio value="construct" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>content</ion-label>
+      <ion-radio value="content" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>criterion-related</ion-label>
+      <ion-radio value="criterion-related" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>face</ion-label>
+      <ion-radio value="face" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #15 </h4>
+      <h4> Which assumption underlies the teacher's useof performance objectives? </h4>
+      <ion-radio-group (ionChange)="getAns($event,15)">
+      <ion-item>
+      <ion-label>Not every form of learning is observable.</ion-label>
+      <ion-radio value="Not every form of learning is observable." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Performance objectives assure the learrier of learning</ion-label>
+      <ion-radio value="Performance objectives assure the learrier of learning" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Learning is defined as a change in the learner's observable performance</ion-label>
+      <ion-radio value="Learning is defined as a change in the learner's observable performance" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>The success of learner is based on teacher performance</ion-label>
+      <ion-radio value="The success of learner is based on teacher performance" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #16 </h4>
+      <h4> In the parlance of test construction what does TOS mean? </h4>
+      <ion-radio-group (ionChange)="getAns($event,16)">
+      <ion-item>
+      <ion-label>Table of Specifics</ion-label>
+      <ion-radio value="Table of Specifics" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Table of Specifications</ion-label>
+      <ion-radio value="Table of Specifications" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Table of Specific Test Items</ion-label>
+      <ion-radio value="Table of Specific Test Items" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Team of Specifications</ion-label>
+      <ion-radio value="Team of Specifications" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #17 </h4>
+      <h4> A student passes a research report poorlywritten but ornately presented in a folder tomake up for the poor quality of the bookreportcontent. Which Filipino trait does this practice prove? Emphasis on __________. </h4>
+      <ion-radio-group (ionChange)="getAns($event,17)">
+      <ion-item>
+      <ion-label>art over academics</ion-label>
+      <ion-radio value="art over academics" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>substance overporma</ion-label>
+      <ion-radio value="substance overporma" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>art over science</ion-label>
+      <ion-radio value="art over science" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>pormaover substance</ion-label>
+      <ion-radio value="pormaover substance" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #18 </h4>
+      <h4> In a criterion-referenced testing, what must you do to ensure that your test is fair? </h4>
+      <ion-radio-group (ionChange)="getAns($event,18)">
+      <ion-item>
+      <ion-label>Make all of the questions true or false.</ion-label>
+      <ion-radio value="Make all of the questions true or false." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Ask each student to contribute one question.</ion-label>
+      <ion-radio value="Ask each student to contribute one question." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Make twenty questions but ask the students to answer only ten of their choice</ion-label>
+      <ion-radio value="Make twenty questions but ask the students to answer only ten of their choice" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Use the objectives for the units as guide in your test construction.</ion-label>
+      <ion-radio value="Use the objectives for the units as guide in your test construction." ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #19 </h4>
+      <h4> Which does Noam Chomsky, assert aboutlanguage learning for children?I. Young children learn and apply grammaticalrules and vocabulary as they are exposed to them.II. Begin formal teaching of grammatical rules tochildren as early as possible.III. Do not require initial formal languageteaching for children. </h4>
+      <ion-radio-group (ionChange)="getAns($event,19)">
+      <ion-item>
+      <ion-label>I and III</ion-label>
+      <ion-radio value="I and III" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>II only</ion-label>
+      <ion-radio value="II only" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>I only</ion-label>
+      <ion-radio value="I only" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>I and II</ion-label>
+      <ion-radio value="I and II" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #20 </h4>
+      <h4> Life is what you make it exemplifies best what ______: </h4>
+      <ion-radio-group (ionChange)="getAns($event,20)">
+      <ion-item>
+      <ion-label>Existentialism</ion-label>
+      <ion-radio value="Existentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Humanism</ion-label>
+      <ion-radio value="Humanism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Progressivism</ion-label>
+      <ion-radio value="Progressivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Essentialism</ion-label>
+      <ion-radio value="Essentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #21 </h4>
+      <h4> After listening to the homily of the Priest about fidelity, Catherine has amoment of reflection. Her understanding of the value of fidelity has become deeper as she related this to her past experience. This typifies what kind of philosophy ? </h4>
+      <ion-radio-group (ionChange)="getAns($event,21)">
+      <ion-item>
+      <ion-label>Constructivism</ion-label>
+      <ion-radio value="Constructivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Reconstructivism</ion-label>
+      <ion-radio value="Reconstructivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Humanism</ion-label>
+      <ion-radio value="Humanism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Existentialism</ion-label>
+      <ion-radio value="Existentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #22 </h4>
+      <h4> After studying the Principle of Identity, Teacher Beng asks her students to determine which among the given set of problems conforms to the said identity. This shows that Teacher Beng upholds this kind of philosophy? </h4>
+      <ion-radio-group (ionChange)="getAns($event,22)">
+      <ion-item>
+      <ion-label>Perennialism</ion-label>
+      <ion-radio value="Perennialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Progressivism</ion-label>
+      <ion-radio value="Progressivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Essentialism</ion-label>
+      <ion-radio value="Essentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Naturalism</ion-label>
+      <ion-radio value="Naturalism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #23 </h4>
+      <h4> Joy listens to the advice given by hersister to end the relationship that she haswith Min Hoo . However, her sisterlearned that the advice she has given wasnot followed and Joy decided to continue the relationship. This action of Joy is a manifestation of what kind of philosophy? </h4>
+      <ion-radio-group (ionChange)="getAns($event,23)">
+      <ion-item>
+      <ion-label>Essentialism</ion-label>
+      <ion-radio value="Essentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Existentialism</ion-label>
+      <ion-radio value="Existentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Perennialism</ion-label>
+      <ion-radio value="Perennialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Humanism</ion-label>
+      <ion-radio value="Humanism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #24 </h4>
+      <h4> After finishing the degree in Education, Teacher Mary realizes that learning never stops. In fact, she accumulates more knowledge after leaving the portal of her alma mater. This typifies what kind of philosophy? </h4>
+      <ion-radio-group (ionChange)="getAns($event,24)">
+      <ion-item>
+      <ion-label>Constructivism</ion-label>
+      <ion-radio value="Constructivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Perennialism</ion-label>
+      <ion-radio value="Perennialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Progressivism</ion-label>
+      <ion-radio value="Progressivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Humanism</ion-label>
+      <ion-radio value="Humanism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #25 </h4>
+      <h4> Flordeluna, an education student, was asked by Prof. Cruz to described accurately education. Which of the following statement will Flordeluna most likely choose? </h4>
+      <ion-radio-group (ionChange)="getAns($event,25)">
+      <ion-item>
+      <ion-label>A process of individual growth and social development</ion-label>
+      <ion-radio value="A process of individual growth and social development" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Growth resulting from academic study</ion-label>
+      <ion-radio value="Growth resulting from academic study" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Acquired basically through the teacher</ion-label>
+      <ion-radio value="Acquired basically through the teacher" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Synonymous to formal schooling</ion-label>
+      <ion-radio value="Synonymous to formal schooling" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #26 </h4>
+      <h4> Miss Orencia has been rated a very effective teacher. Which intellectual trait does Miss Orencia manifest? </h4>
+      <ion-radio-group (ionChange)="getAns($event,26)">
+      <ion-item>
+      <ion-label>Well groomed </ion-label>
+      <ion-radio value="Well groomed " ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Tolerance</ion-label>
+      <ion-radio value="Tolerance" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Widely read</ion-label>
+      <ion-radio value="Widely read" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Intellectual honest</ion-label>
+      <ion-radio value="Intellectual honest" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #27 </h4>
+      <h4> Miss Lucero is a newly appointed teacher. The principal handed a copy of the Teacher’s Code of Ethics. Which could have been the motive of the principal? </h4>
+      <ion-radio-group (ionChange)="getAns($event,27)">
+      <ion-item>
+      <ion-label>Acquaint her with principles of moral behavior, conduct and relationship in the practice of profession</ion-label>
+      <ion-radio value="Acquaint her with principles of moral behavior, conduct and relationship in the practice of profession" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Make her aware of the principles and rules prescribed under the authority of the state</ion-label>
+      <ion-radio value=". Make her aware of the principles and rules prescribed under the authority of the state" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Familiarize her with the generally accepted customs of right living in a society</ion-label>
+      <ion-radio value="Familiarize her with the generally accepted customs of right living in a society" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Provides her a set of rules and regulation to observe in school</ion-label>
+      <ion-radio value="Provides her a set of rules and regulation to observe in school" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #28 </h4>
+      <h4> As a pioneer in the world ideas, what would be the teacher’s task? </h4>
+      <ion-radio-group (ionChange)="getAns($event,28)">
+      <ion-item>
+      <ion-label>Establishing instructional goals</ion-label>
+      <ion-radio value="Establishing instructional goals" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Establishing standards of behavior</ion-label>
+      <ion-radio value="Establishing standards of behavior" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Leading children to acquire about his environment</ion-label>
+      <ion-radio value="Leading children to acquire about his environment" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Articulating social, political and economic traditions</ion-label>
+      <ion-radio value=". Articulating social, political and economic traditions" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #29 </h4>
+      <h4> Mr. Villena is a newly appointed teacher. The principal advised him to avoid any conduct which discredit the teaching profession? </h4>
+      <ion-radio-group (ionChange)="getAns($event,29)">
+      <ion-item>
+      <ion-label>Writing anonymous letters</ion-label>
+      <ion-radio value="Writing anonymous letters" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Revealing confidential information to authorities concerned</ion-label>
+      <ion-radio value="Revealing confidential information to authorities concerned" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Assigning underserved grades</ion-label>
+      <ion-radio value=". Assigning underserved grades" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label> Joining social drinking and gambling session</ion-label>
+      <ion-radio value=" Joining social drinking and gambling session" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #30 </h4>
+      <h4> Mr. Fernando, a Geography teacher, integrates the learning activities and materials with real life. Inline with the principle of expanding environment her context should start with </h4>
+      <ion-radio-group (ionChange)="getAns($event,30)">
+      <ion-item>
+      <ion-label>. projection into the future</ion-label>
+      <ion-radio value=". projection into the future" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>adventures into outer space</ion-label>
+      <ion-radio value="adventures into outer space" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>local situations and community</ion-label>
+      <ion-radio value="local situations and community" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>lands and people beyond Philippine shores</ion-label>
+      <ion-radio value="lands and people beyond Philippine shores" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #31 </h4>
+      <h4> When Ms. Narvaez selects activist and materials for her Social Studies lessons that stimulate curiosity and satisfy the need to know, which criterion is meet? </h4>
+      <ion-radio-group (ionChange)="getAns($event,31)">
+      <ion-item>
+      <ion-label> Criterion of organization</ion-label>
+      <ion-radio value=" Criterion of organization" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Criterion of authenticity</ion-label>
+      <ion-radio value="Criterion of authenticity" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>criterion of appropriateness</ion-label>
+      <ion-radio value="criterion of appropriateness" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Criterion of interest</ion-label>
+      <ion-radio value="Criterion of interest" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #32 </h4>
+      <h4> The Grade 6 Science teachers are engaged in panning the units for Science. Which of the following activities will not be engaged in by the group of teachers? </h4>
+      <ion-radio-group (ionChange)="getAns($event,32)">
+      <ion-item>
+      <ion-label>rearranging or adding lesson content to provide task-relevant prior knowledge</ion-label>
+      <ion-radio value="rearranging or adding lesson content to provide task-relevant prior knowledge" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>translating unit outcomes/objectives into specific lesson objective</ion-label>
+      <ion-radio value="translating unit outcomes/objectives into specific lesson objective" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>classifying unit outcome/objectives at a higher level of behavior</ion-label>
+      <ion-radio value="classifying unit outcome/objectives at a higher level of behavior" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>breaking the lesson contents into chunk</ion-label>
+      <ion-radio value="breaking the lesson contents into chunk" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #33 </h4>
+      <h4> Miss Tantengco is teaching a lesson on “sounds”. Assuming that no task-relevant prior knowledge is required , what should be the starting point of her lesson? </h4>
+      <ion-radio-group (ionChange)="getAns($event,33)">
+      <ion-item>
+      <ion-label>comprehension of principles</ion-label>
+      <ion-radio value="comprehension of principles" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>knowledge of principle</ion-label>
+      <ion-radio value="knowledge of principle" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>comprehension of concepts</ion-label>
+      <ion-radio value="comprehension of concepts" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>knowledge of concepts</ion-label>
+      <ion-radio value="knowledge of concepts" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #34 </h4>
+      <h4> What is the primary reason why teacher should take a system perspective? </h4>
+      <ion-radio-group (ionChange)="getAns($event,34)">
+      <ion-item>
+      <ion-label>Lessons prepared will always be a part of something greater</ion-label>
+      <ion-radio value="Lessons prepared will always be a part of something greater" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Lesson plan is composed of interrelated parts of a system</ion-label>
+      <ion-radio value=". Lesson plan is composed of interrelated parts of a system" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Lesson plan is a part of the total school system</ion-label>
+      <ion-radio value="Lesson plan is a part of the total school system" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Lesson planning is a systematic process</ion-label>
+      <ion-radio value=". Lesson planning is a systematic process" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #35 </h4>
+      <h4> Which of the following conditions manifests trend of globalization? </h4>
+      <ion-radio-group (ionChange)="getAns($event,35)">
+      <ion-item>
+      <ion-label>Establishment of stronger boundaries between and among nations</ion-label>
+      <ion-radio value="Establishment of stronger boundaries between and among nations" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Increased awareness on the importance of national cultures and traditions.</ion-label>
+      <ion-radio value=". Increased awareness on the importance of national cultures and traditions." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Less and less impact of human activity on the planet earth.</ion-label>
+      <ion-radio value=". Less and less impact of human activity on the planet earth." ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>The incorporation of local and national economies into a worldwide global economy</ion-label>
+      <ion-radio value="The incorporation of local and national economies into a worldwide global economy" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #36 </h4>
+      <h4> According to the Delors report, there are a number of main tensions central to the problems of thetwenty first century that we need to overcome. One of them is the challenge to an individual how he or she can adapt to the changing world without forgetting or turning his/her back from the past. What kindof tension or conflict is manifested in this situation? </h4>
+      <ion-radio-group (ionChange)="getAns($event,36)">
+      <ion-item>
+      <ion-label>Tension between tradition and modernity</ion-label>
+      <ion-radio value="Tension between tradition and modernity" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Tension between the global and the local</ion-label>
+      <ion-radio value=". Tension between the global and the local" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Tension between the universal and the individual</ion-label>
+      <ion-radio value="Tension between the universal and the individual" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Tension between long term and short term considerations</ion-label>
+      <ion-radio value="Tension between long term and short term considerations" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #37 </h4>
+      <h4> Which of the following features represents the new paradigm shift in education? </h4>
+      <ion-radio-group (ionChange)="getAns($event,37)">
+      <ion-item>
+      <ion-label>Traditional pedagogies</ion-label>
+      <ion-radio value="Traditional pedagogies" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Lifelong education for all</ion-label>
+      <ion-radio value="Lifelong education for all" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Rigid subject matter boundaries</ion-label>
+      <ion-radio value=". Rigid subject matter boundaries" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Knowledge as the only learning outcome</ion-label>
+      <ion-radio value="Knowledge as the only learning outcome" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #38 </h4>
+      <h4> What is the measure of relevance in education? </h4>
+      <ion-radio-group (ionChange)="getAns($event,38)">
+      <ion-item>
+      <ion-label>Democratization of access</ion-label>
+      <ion-radio value="Democratization of access" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Functionality and meaningfulness</ion-label>
+      <ion-radio value="Functionality and meaningfulness" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label> Ability to sustain education through the future</ion-label>
+      <ion-radio value=" Ability to sustain education through the future" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Excellence and effectiveness</ion-label>
+      <ion-radio value="Excellence and effectiveness" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #39 </h4>
+      <h4> What is the concern of Multicultural Education? </h4>
+      <ion-radio-group (ionChange)="getAns($event,39)">
+      <ion-item>
+      <ion-label>Anticipating the future and imagining possible and probable futures</ion-label>
+      <ion-radio value="Anticipating the future and imagining possible and probable futures" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Gender equality and harnessing of the role of women in development</ion-label>
+      <ion-radio value="Gender equality and harnessing of the role of women in development" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Promoting care for the environment and building a global culture of ecological responsibility</ion-label>
+      <ion-radio value=". Promoting care for the environment and building a global culture of ecological responsibility" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>The exploration of concepts of cultural diversity, similarities and prejudices to promote cultural understanding.</ion-label>
+      <ion-radio value="The exploration of concepts of cultural diversity, similarities and prejudices to promote cultural understanding." ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #40 </h4>
+      <h4> Teacher A, a Values Education teacher emphasizes ethics in almost all her lessons. Which of the following emphasizes the same? </h4>
+      <ion-radio-group (ionChange)="getAns($event,40)">
+      <ion-item>
+      <ion-label>Liberal Education</ion-label>
+      <ion-radio value="Liberal Education" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Moral Education</ion-label>
+      <ion-radio value=". Moral Education" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Religious Training</ion-label>
+      <ion-radio value="Religious Training" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Social Education</ion-label>
+      <ion-radio value="Social Education" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #41 </h4>
+      <h4> Which reform in the Philippine Educational System advocates the use of English and Filipino as mediaof instruction in specific learning areas? </h4>
+      <ion-radio-group (ionChange)="getAns($event,41)">
+      <ion-item>
+      <ion-label>Alternative Learning</ion-label>
+      <ion-radio value="Alternative Learning" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Bilingual Education</ion-label>
+      <ion-radio value=". Bilingual Education" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>K-12 Program</ion-label>
+      <ion-radio value="K-12 Program" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Multilingual Education</ion-label>
+      <ion-radio value=". Multilingual Education" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #42 </h4>
+      <h4> Activities planned by school clubs/ organizations show school-community connection geared towardssociety's needs. What philosophy is related to this? </h4>
+      <ion-radio-group (ionChange)="getAns($event,42)">
+      <ion-item>
+      <ion-label>Existentialism</ion-label>
+      <ion-radio value="Existentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Progressivism</ion-label>
+      <ion-radio value="Progressivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Realism</ion-label>
+      <ion-radio value="Realism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Social reconstructionism</ion-label>
+      <ion-radio value="Social reconstructionism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #43 </h4>
+      <h4> What philosophy is related to the practice of schools acting as laboratory for teaching reforms and experimentation? </h4>
+      <ion-radio-group (ionChange)="getAns($event,43)">
+      <ion-item>
+      <ion-label>Essentialism</ion-label>
+      <ion-radio value="Essentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Existentialism</ion-label>
+      <ion-radio value="Existentialism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>Progressivism</ion-label>
+      <ion-radio value="Progressivism" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. Social Reconstructionism</ion-label>
+      <ion-radio value=". Social Reconstructionism" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #44 </h4>
+      <h4> Which of the following situations presents a value conflict? </h4>
+      <ion-radio-group (ionChange)="getAns($event,44)">
+      <ion-item>
+      <ion-label>The teacher and his students have class standing as their priorities</ion-label>
+      <ion-radio value="The teacher and his students have class standing as their priorities" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>The teacher and the administrator follow a set of criteria in giving grades</ion-label>
+      <ion-radio value="The teacher and the administrator follow a set of criteria in giving grades" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>The teacher has students whose parents want their children to obtain higher grades than what they are capable of getting</ion-label>
+      <ion-radio value="The teacher has students whose parents want their children to obtain higher grades than what they are capable of getting" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>The teacher sets high expectations for intelligent students such as getting higher grades.</ion-label>
+      <ion-radio value="The teacher sets high expectations for intelligent students such as getting higher grades." ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #45 </h4>
+      <h4> Which holds true to standardized tests? </h4>
+      <ion-radio-group (ionChange)="getAns($event,45)">
+      <ion-item>
+      <ion-label>They are used for comparative purposes</ion-label>
+      <ion-radio value="They are used for comparative purposes" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>They are administered differently</ion-label>
+      <ion-radio value="They are administered differently" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>They are scored according to different standards</ion-label>
+      <ion-radio value="They are scored according to different standards" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label></ion-label>
+      <ion-radio value="" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #46 </h4>
+      <h4> A negative discrimination index of a test item tells that particular test item lacks _____. </h4>
+      <ion-radio-group (ionChange)="getAns($event,46)">
+      <ion-item>
+      <ion-label>objectivity</ion-label>
+      <ion-radio value="objectivity" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>reliability</ion-label>
+      <ion-radio value="reliability" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>content validity</ion-label>
+      <ion-radio value="content validity" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>construct validity</ion-label>
+      <ion-radio value="construct validity" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #47 </h4>
+      <h4> In his second item analysis, Teacher H found out that more from the lower group got the test item # 6correctly. This means that the test item __________. </h4>
+      <ion-radio-group (ionChange)="getAns($event,47)">
+      <ion-item>
+      <ion-label>has a negative discriminating power</ion-label>
+      <ion-radio value="has a negative discriminating power" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>has a lower validity</ion-label>
+      <ion-radio value="has a lower validity" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>has a positive discriminating power</ion-label>
+      <ion-radio value="has a positive discriminating power" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>has a high reliability</ion-label>
+      <ion-radio value="has a high reliability" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #48 </h4>
+      <h4> You want ti teach concepts, patterns, and abstractions. Which method is most appropriate </h4>
+      <ion-radio-group (ionChange)="getAns($event,48)">
+      <ion-item>
+      <ion-label>deductive method</ion-label>
+      <ion-radio value="deductive method" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>problem solving</ion-label>
+      <ion-radio value="problem solving" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>direct instruction</ion-label>
+      <ion-radio value="direct instruction" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>indirect instruction</ion-label>
+      <ion-radio value="indirect instruction" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #49 </h4>
+      <h4> Which can enhance the development of spatial intelligence? </h4>
+      <ion-radio-group (ionChange)="getAns($event,49)">
+      <ion-item>
+      <ion-label>hands-on demonstrations</ion-label>
+      <ion-radio value="hands-on demonstrations" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>environmental study</ion-label>
+      <ion-radio value="environmental study" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>concept miming</ion-label>
+      <ion-radio value="concept miming" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>. concept mapping</ion-label>
+      <ion-radio value=". concept mapping" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+      <br><br>
+      <h4>Question #50 </h4>
+      <h4> You want ti teach concepts, patterns, and abstractions. Which method is most appropriate </h4>
+      <ion-radio-group (ionChange)="getAns($event,50)">
+      <ion-item>
+      <ion-label>deductive method</ion-label>
+      <ion-radio value="deductive method" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>problem solving</ion-label>
+      <ion-radio value="problem solving" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>direct instruction</ion-label>
+      <ion-radio value="direct instruction" ion slot="start"></ion-radio>
+      </ion-item>
+      <ion-item>
+      <ion-label>indirect instruction</ion-label>
+      <ion-radio value="indirect instruction" ion slot="start"></ion-radio>
+      </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card>s
+</ion-content>
