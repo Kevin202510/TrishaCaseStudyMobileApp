@@ -1,24 +1,32 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-tab-bar color="danger">
+      <ion-title color="light">Home</ion-title>
+  </ion-tab-bar>
     <ion-buttons slot="start"><ion-menu-button menu="letexam-menu"></ion-menu-button></ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+
+<ion-content [fullscreen]="true" color="warning">
+  <ion-card-content>
+  <ion-card>
+      <img src="../assets/BOOKS.jpeg" width="600" height="550">
+    </ion-card>
+  </ion-card-content>
+    
   <ion-tabs>
-    <ion-tab-bar slot="bottom">
+    <ion-tab-bar slot="bottom" color="danger">
       <ion-tab-button routerLink="/gen-ed">
         <ion-icon name="calendar"></ion-icon>
-        <ion-label>General Education</ion-label>
+        <ion-label color="light">General Education</ion-label>
         <ion-badge>6</ion-badge>
       </ion-tab-button>
   
       <ion-tab-button routerLink="/prof-ed">
         <ion-icon name="person-circle"></ion-icon>
-        <ion-label>Professional Education</ion-label>
+        <ion-label color="light">Professional Education</ion-label>
+        <ion-badge>3</ion-badge>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
