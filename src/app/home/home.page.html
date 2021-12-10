@@ -12,22 +12,8 @@
   <ion-card-content>
   <ion-card>
       <img src="../assets/BOOKS.jpeg" width="600" height="550">
+      <ion-button href="gen-ed" (click) = "saveLevel()">Elementary Level</ion-button>
+      <ion-button href="gen-ed" (click) = "saveLevels()">Secondary Level</ion-button>
     </ion-card>
   </ion-card-content>
-    
-  <ion-tabs>
-    <ion-tab-bar slot="bottom" color="danger">
-      <ion-tab-button routerLink="/gen-ed">
-        <ion-icon name="calendar"></ion-icon>
-        <ion-label color="light">General Education</ion-label>
-        <ion-badge>6</ion-badge>
-      </ion-tab-button>
-  
-      <ion-tab-button routerLink="/prof-ed">
-        <ion-icon name="person-circle"></ion-icon>
-        <ion-label color="light">Professional Education</ion-label>
-        <ion-badge>3</ion-badge>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
 </ion-content>

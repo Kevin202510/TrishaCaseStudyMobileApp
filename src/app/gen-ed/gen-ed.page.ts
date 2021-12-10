@@ -14,257 +14,367 @@ export class GenEdPage implements OnInit {
   }
 
   corAns:number = 0;
-  answerSelected = false;
+  answerSelected1 = false;
+answerSelected2 = false;
+answerSelected3 = false;
+answerSelected4 = false;
+answerSelected5 = false;
+answerSelected6 = false;
+answerSelected7 = false;
+answerSelected8 = false;
+answerSelected9 = false;
+answerSelected10 = false;
+answerSelected11 = false;
+answerSelected12 = false;
+answerSelected13 = false;
+answerSelected14 = false;
+answerSelected15 = false;
+answerSelected16 = false;
+answerSelected17 = false;
+answerSelected18 = false;
+answerSelected19 = false;
+answerSelected20 = false;
+answerSelected21 = false;
+answerSelected22 = false;
+answerSelected23 = false;
+answerSelected24 = false;
+answerSelected25 = false;
+answerSelected26 = false;
+answerSelected27 = false;
+answerSelected28 = false;
+answerSelected29 = false;
+answerSelected30 = false;
+answerSelected31 = false;
+answerSelected32 = false;
+answerSelected33 = false;
+answerSelected34 = false;
+answerSelected35 = false;
+answerSelected36 = false;
+answerSelected37 = false;
+answerSelected38 = false;
+answerSelected39 = false;
+answerSelected40 = false;
+answerSelected41 = false;
+answerSelected42 = false;
+answerSelected43 = false;
+answerSelected44 = false;
+answerSelected45 = false;
+answerSelected46 = false;
+answerSelected47 = false;
+answerSelected48 = false;
+answerSelected49 = false;
+answerSelected50 = false;
   
+  saveScoreAndGo(){
+    if(localStorage.getItem("GenEdScore")===null){
+      var data = {Score : this.corAns};
+      localStorage.setItem('GenEdScore',JSON.stringify(data));
+    }
+    var datas = JSON.parse(localStorage.getItem('GenEdScore'));
+    datas.Score = this.corAns;
+    localStorage.setItem('GenEdScore',JSON.stringify(datas));
+  }
+
   checkAns(val:string,qnum:number){
-    if(val === "For" && qnum == 1){
-      this.answerSelected = true;
+      if(val === "With" && qnum == 1){
       this.corAns++;
       }
-      
-      
-      else if(val === "reserved" && qnum == 2){
+      else if(val === "verbose" && qnum == 2){
       this.corAns++;
       }
-      
-      
-      else if(val === " families with boarders in addition to the family members" && qnum == 3){
+      else if(val === " families with illegal light and water connections" && qnum == 3){
       this.corAns++;
       }
-      
-      
-      else if(val === "report" && qnum == 4){
+      else if(val === "proverb" && qnum == 4){
       this.corAns++;
       }
-      
-      
-      else if(val === "to identify threats of human rights" && qnum == 5){
+      else if(val === "to generate awareness of one’s basic rights" && qnum == 5){
       this.corAns++;
       }
-      
-      
-      else if(val === "primaries" && qnum == 6){
+      else if(val === "primary and secondary cooperatives" && qnum == 6){
       this.corAns++;
       }
-      
-      
-      else if(val === "over" && qnum == 7){
+      else if(val === "in" && qnum == 7){
       this.corAns++;
       }
-      
-      
-      else if(val === "meristems in the root tip" && qnum == 8){
+      else if(val === "xylem in the stem" && qnum == 8){
       this.corAns++;
       }
-      
-      
-      else if(val === " 5–√ is a rational number" && qnum == 9){
+      else if(val === "3–√ is a real number" && qnum == 9){
       this.corAns++;
       }
-      
-      
-      else if(val === "With the use" && qnum == 10){
+      else if(val === "on the use" && qnum == 10){
       this.corAns++;
       }
-      
-      
-      else if(val === "Important" && qnum == 11){
+      else if(val === "Irrelevant" && qnum == 11){
       this.corAns++;
       }
-      
-      
       else if(val === "Friendliness" && qnum == 12){
       this.corAns++;
       }
-      
-      
-      else if(val === "Mercy is only for deserving" && qnum == 13){
+      else if(val === "Mercy is limited in extent" && qnum == 13){
       this.corAns++;
       }
-      
-      
-      else if(val === "Juan Luna" && qnum == 14){
+      else if(val === "Graciano Lopez Jaena" && qnum == 14){
       this.corAns++;
       }
-      
-      
-      else if(val === "The passerine birds will thrive" && qnum == 15){
+      else if(val === "the passerine birds will convert to herbivores" && qnum == 15){
       this.corAns++;
       }
-      
-      
-      else if(val === "Bottoms-up" && qnum == 16){
+      else if(val === "Interactive" && qnum == 16){
       this.corAns++;
       }
-      
-      
-      else if(val === "Make the threat and reinforce with warning" && qnum == 17){
+      else if(val === "First a warning before the threat" && qnum == 17){
       this.corAns++;
       }
-      
-      
-      else if(val === "Doubtful" && qnum == 18){
+      else if(val === "on the use" && qnum == 18){
       this.corAns++;
       }
-      
-      
-      else if(val === "Impresyonista" && qnum == 19){
+      else if(val === "Certain" && qnum == 19){
       this.corAns++;
       }
-      
-      
-      else if(val === "simile" && qnum == 20){
+      else if(val === "Impresyonista" && qnum == 20){
       this.corAns++;
       }
-      
-      
       else if(val === "simile" && qnum == 21){
       this.corAns++;
       }
-      
-      
-      else if(val === "ellipsis" && qnum == 22){
+      else if(val === "personification" && qnum == 22){
       this.corAns++;
       }
-      
-      
-      else if(val === "Si" && qnum == 23){
+      else if(val === "synecdoche" && qnum == 23){
       this.corAns++;
       }
-      
-      
-      else if(val === "Dalhin" && qnum == 24){
+      else if(val === "Si" && qnum == 24){
       this.corAns++;
       }
-      
-      
-      else if(val === "Maliban" && qnum == 25){
+      else if(val === "Dalhan" && qnum == 25){
       this.corAns++;
       }
-      
-      
-      else if(val === "To protect the prisoner from further harassment" && qnum == 26){
+      else if(val === "Maliban" && qnum == 26){
       this.corAns++;
       }
-      
-      
-      else if(val === "A tainted with malice" && qnum == 27){
+      else if(val === "To determine the physical and mental state of the army man" && qnum == 27){
       this.corAns++;
       }
-      
-      
-      else if(val === "Opium" && qnum == 28){
+      else if(val === "Full of distorted facts" && qnum == 28){
       this.corAns++;
       }
-      
-      
-      else if(val === "Right of family to family living wage" && qnum == 29){
+      else if(val === "Shabu" && qnum == 29){
       this.corAns++;
       }
-      
-      
-      else if(val === "The confession was without due consultan" && qnum == 30){
+      else if(val === "Right of the children to work and exploitation" && qnum == 30){
       this.corAns++;
       }
-      
-      
-      else if(val === "Science will help make the world a better place to live in." && qnum == 31){
+      else if(val === "The confession was without due consultan" && qnum == 31){
       this.corAns++;
       }
-      
-      
-      else if(val === "designing for a need " && qnum == 32){
+      else if(val === "Science will help make the world a better place to live in." && qnum == 32){
       this.corAns++;
       }
-      
-      
       else if(val === "designing for a need " && qnum == 33){
       this.corAns++;
       }
-      
-      
-      else if(val === "Tungsten has a high melting point" && qnum == 34){
+      else if(val === "uncovering natural phenomena" && qnum == 34){
       this.corAns++;
       }
-      
-      
-      else if(val === "beaker" && qnum == 35){
+      else if(val === "Fluorescent lamps are improved through methods of manufacturing." && qnum == 35){
       this.corAns++;
       }
-      
-      
-      else if(val === "Demands" && qnum == 36){
+      else if(val === "triple beam balance" && qnum == 36){
       this.corAns++;
       }
-      
-      
-      else if(val === "repair" && qnum == 37){
+      else if(val === "Observes" && qnum == 37){
       this.corAns++;
       }
-      
-      
-      else if(val === "Frustrating" && qnum == 38){
+      else if(val === "repair" && qnum == 38){
       this.corAns++;
       }
-      
-      
-      else if(val === "embarrassing" && qnum == 39){
+      else if(val === "happy" && qnum == 39){
       this.corAns++;
       }
-      
-      
-      else if(val === "dispute" && qnum == 40){
+      else if(val === "peaceful" && qnum == 40){
       this.corAns++;
       }
-      
-      
-      else if(val === "effective" && qnum == 41){
+      else if(val === "dispute" && qnum == 41){
       this.corAns++;
       }
-      
-      
-      else if(val === "specify" && qnum == 42){
+      else if(val === "expert" && qnum == 42){
       this.corAns++;
       }
-      
-      
-      else if(val === "remove" && qnum == 43){
+      else if(val === "attach" && qnum == 43){
       this.corAns++;
       }
-      
-      
-      else if(val === "magnificent" && qnum == 44){
+      else if(val === "include" && qnum == 44){
       this.corAns++;
       }
-      
-      
-      else if(val === "curiosity" && qnum == 45){
+      else if(val === "ridiculous" && qnum == 45){
       this.corAns++;
       }
-      
-      
-      else if(val === "appealing" && qnum == 46){
+      else if(val === "restlessly" && qnum == 46){
       this.corAns++;
       }
-      
-      
-      else if(val === "Right to just treatment" && qnum == 47){
+      else if(val === "Right of disable to equal treatment" && qnum == 47){
       this.corAns++;
       }
-      
-      
       else if(val === "In the event" && qnum == 48){
       this.corAns++;
       }
-      
-      
-      else if(val === "Adjectives" && qnum == 49){
+      else if(val === "Verbs" && qnum == 49){
       this.corAns++;
       }
-      
-
-      else if(val === "With the use" && qnum == 10){
-        this.corAns++;
+      else if(val === "Pronouns" && qnum == 50){
+      this.corAns++;
+      }
+      if(qnum == 1){
+      this.answerSelected1 = true;
+      }
+      if(qnum == 2){
+      this.answerSelected2 = true;
+      }
+      if(qnum == 3){
+      this.answerSelected3 = true;
+      }
+      if(qnum == 4){
+      this.answerSelected4 = true;
+      }
+      if(qnum == 5){
+      this.answerSelected5 = true;
+      }
+      if(qnum == 6){
+      this.answerSelected6 = true;
+      }
+      if(qnum == 7){
+      this.answerSelected7 = true;
+      }
+      if(qnum == 8){
+      this.answerSelected8 = true;
+      }
+      if(qnum == 9){
+      this.answerSelected9 = true;
+      }
+      if(qnum == 10){
+      this.answerSelected10 = true;
+      }
+      if(qnum == 11){
+      this.answerSelected11 = true;
+      }
+      if(qnum == 12){
+      this.answerSelected12 = true;
+      }
+      if(qnum == 13){
+      this.answerSelected13 = true;
+      }
+      if(qnum == 14){
+      this.answerSelected14 = true;
+      }
+      if(qnum == 15){
+      this.answerSelected15 = true;
+      }
+      if(qnum == 16){
+      this.answerSelected16 = true;
+      }
+      if(qnum == 17){
+      this.answerSelected17 = true;
+      }
+      if(qnum == 18){
+      this.answerSelected18 = true;
+      }
+      if(qnum == 19){
+      this.answerSelected19 = true;
+      }
+      if(qnum == 20){
+      this.answerSelected20 = true;
+      }
+      if(qnum == 21){
+      this.answerSelected21 = true;
+      }
+      if(qnum == 22){
+      this.answerSelected22 = true;
+      }
+      if(qnum == 23){
+      this.answerSelected23 = true;
+      }
+      if(qnum == 24){
+      this.answerSelected24 = true;
+      }
+      if(qnum == 25){
+      this.answerSelected25 = true;
+      }
+      if(qnum == 26){
+      this.answerSelected26 = true;
+      }
+      if(qnum == 27){
+      this.answerSelected27 = true;
+      }
+      if(qnum == 28){
+      this.answerSelected28 = true;
+      }
+      if(qnum == 29){
+      this.answerSelected29 = true;
+      }
+      if(qnum == 30){
+      this.answerSelected30 = true;
+      }
+      if(qnum == 31){
+      this.answerSelected31 = true;
+      }
+      if(qnum == 32){
+      this.answerSelected32 = true;
+      }
+      if(qnum == 33){
+      this.answerSelected33 = true;
+      }
+      if(qnum == 34){
+      this.answerSelected34 = true;
+      }
+      if(qnum == 35){
+      this.answerSelected35 = true;
+      }
+      if(qnum == 36){
+      this.answerSelected36 = true;
+      }
+      if(qnum == 37){
+      this.answerSelected37 = true;
+      }
+      if(qnum == 38){
+      this.answerSelected38 = true;
+      }
+      if(qnum == 39){
+      this.answerSelected39 = true;
+      }
+      if(qnum == 40){
+      this.answerSelected40 = true;
+      }
+      if(qnum == 41){
+      this.answerSelected41 = true;
+      }
+      if(qnum == 42){
+      this.answerSelected42 = true;
+      }
+      if(qnum == 43){
+      this.answerSelected43 = true;
+      }
+      if(qnum == 44){
+      this.answerSelected44 = true;
+      }
+      if(qnum == 45){
+      this.answerSelected45 = true;
+      }
+      if(qnum == 46){
+      this.answerSelected46 = true;
+      }
+      if(qnum == 47){
+      this.answerSelected47 = true;
+      }
+      if(qnum == 48){
+      this.answerSelected48 = true;
+      }
+      if(qnum == 49){
+      this.answerSelected49 = true;
+      }
+      if(qnum == 50){
+      this.answerSelected50 = true;
       }
       
       console.log(this.corAns);
