@@ -1,25 +1,30 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-tab-bar color="danger">
-    <ion-title style="margin-top: 10px;"  color="light"><center>Professional Education</center></ion-title>
-  </ion-tab-bar>
+  <ion-toolbar color="danger">
+    <!-- <ion-tab-bar color="danger"> -->
+    <ion-title color="light">
+      Professional Education
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  <!-- </ion-tab-bar> -->
   </ion-toolbar>
-</ion-header>
-<style>
- h2{
-
-  color:yellow;
- }
-
- h3{
-   color:sandybrown;
- }
-
-
-
-</style>
+</ion-header> 
 
 <ion-content>
+  <style>
+    h2{
+   
+     color:yellow;
+    }
+   
+    h3{
+      color:sandybrown;
+    }
+   
+   
+   
+   </style>
   <ion-card color="success">
     <ion-card-content>
         <h2>Question #1</h2>
@@ -1168,25 +1173,4 @@
       </ion-radio-group>
     </ion-card-content>
   </ion-card>
-
-  <ion-toolbar>
-    <ion-tabs>
-      <ion-tab-bar slot="bottom" color="danger">
-        <ion-tab-button routerLink="/gen-ed">
-          <ion-icon name="calendar"></ion-icon>
-          <ion-label  color="light">General Education</ion-label>
-        </ion-tab-button>
-
-        <ion-tab-button routerLink="/home">
-          <ion-icon name="home"></ion-icon>
-          <ion-label color="light">Home</ion-label>
-        </ion-tab-button>
-      
-        <ion-tab-button routerLink="/prof-ed">
-          <ion-icon name="person-circle"></ion-icon>
-          <ion-label  color="light">Professional Education</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
 </ion-content>

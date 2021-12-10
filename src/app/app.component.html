@@ -1,3 +1,39 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>LET APP MENU</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="/gen-ed">
+            <ion-icon slot="start"></ion-icon>
+            <ion-label>General Education</ion-label>
+          </ion-item>
+        </ion-menu-toggle> 
+        <ion-menu-toggle>
+          <ion-item routerLink="/prof-ed">
+            <ion-icon slot="start"></ion-icon>
+            <ion-label>Professional Education</ion-label>
+          </ion-item>
+        </ion-menu-toggle> 
+        <ion-menu-toggle>
+          <ion-item routerLink="/english">
+            <ion-icon slot="start"></ion-icon>
+            <ion-label>English</ion-label>
+          </ion-item>
+        </ion-menu-toggle> 
+        <ion-menu-toggle>
+          <ion-item routerLink="/filipino">
+            <ion-icon slot="start"></ion-icon>
+            <ion-label>Filipino</ion-label>
+          </ion-item>
+        </ion-menu-toggle> 
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

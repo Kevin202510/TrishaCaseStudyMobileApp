@@ -1,10 +1,13 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-tab-bar color="danger">
+  <ion-toolbar color="danger">
+    <!-- <ion-tab-bar color="danger"> -->
     <ion-title color="light">
       General Education
     </ion-title>
-  </ion-tab-bar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+  <!-- </ion-tab-bar> -->
   </ion-toolbar>
 </ion-header> 
 
@@ -1174,27 +1177,5 @@
   </ion-radio-group>
 </ion-card-content>
 </ion-card>
-
-
-<ion-tabs>
-  <ion-tab-bar slot="bottom" color="danger">
-    <ion-tab-button routerLink="/gen-ed">
-      <ion-icon name="calendar"></ion-icon>
-      <ion-label color="light">General Education</ion-label>
-      <ion-badge>6</ion-badge>
-    </ion-tab-button>
-
-    <ion-tab-button routerLink="/home">
-      <ion-icon name="home"></ion-icon>
-      <ion-label color="light">Home</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button routerLink="/prof-ed">
-      <ion-icon name="person-circle"></ion-icon>
-      <ion-label color="light">Professional Education</ion-label>
-      <ion-badge>3</ion-badge>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
 </ion-content>
 

@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'prof-ed',
     loadChildren: () => import('./prof-ed/prof-ed.module').then( m => m.ProfEdPageModule)
   },
+  {
+    path: 'english',
+    loadChildren: () => import('./english/english.module').then( m => m.EnglishPageModule)
+  },
+  {
+    path: 'filipino',
+    loadChildren: () => import('./filipino/filipino.module').then( m => m.FilipinoPageModule)
+  },
 
 ];
 
