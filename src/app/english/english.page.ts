@@ -402,6 +402,7 @@ totalAverage = 0;
   computeAve(){
     if(this.lev==="Sec"){
       this.estat = true;
+      // alert(this.estat);
       var datas = JSON.parse(localStorage.getItem('ProfEdScore'));
       var data = JSON.parse(localStorage.getItem('GenEdScore'));
       var datass = JSON.parse(localStorage.getItem('EngScore'));

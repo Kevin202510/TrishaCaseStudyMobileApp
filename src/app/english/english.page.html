@@ -11,15 +11,16 @@
   </ion-toolbar>
 </ion-header> 
 
+<style>
+  h4 {
+    color:whitesmoke;
+  }
+  h2 {
+    color:cadetblue;
+  }
+</style>
+
 <ion-content>
-  <style>
-    h4 {
-      color:whitesmoke;
-    }
-    h2 {
-      color:cadetblue;
-    }
-  </style>
 
 <ion-card>
   <ion-card-content *ngIf="!estat">
@@ -1125,9 +1126,11 @@
     </ion-radio-group>
     <br> <br>
   </ion-card-content>
-  <ion-card-content *ngIf="estat">
-    <h4>Final Average is : {{totalAverage}}</h4>
-    <ion-button *ngIf="lev==='Sec'" href="home">Finish</ion-button>
-</ion-card-content>
+
+  <!-- <ion-card-content> -->
+    <h2 *ngIf="estat">Final Average is {{totalAverage}}</h2>
+    <ion-button *ngIf="lev==='Sec' && estat" href="home">Finish</ion-button>
+<!-- </ion-card-content> -->
+
 </ion-card>
 </ion-content>
